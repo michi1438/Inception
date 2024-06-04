@@ -1,0 +1,17 @@
+FROM alpine:latest
+
+WORKDIR /code
+COPY nginx.conf . 
+COPY index.html . 
+COPY index1.html . 
+COPY cert.pem . 
+COPY cert.key .
+
+
+RUN apk update && \
+	apk add nginx
+
+EXPOSE 443 
+
+CMD ["nginx", "-c", "/code/nginx.conf", "-g", "daemon off;"]
+
