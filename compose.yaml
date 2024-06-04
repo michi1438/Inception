@@ -6,7 +6,7 @@
 #    By: mguerga <mguerga@42lausanne.ch>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/03/12 11:15:41 by mguerga           #+#    #+#              #
-#    Updated: 2024/06/02 14:14:44 by mguerga          ###   ########.fr        #
+#    Updated: 2024/06/04 09:30:21 by mguerga          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,27 +14,32 @@ services:
   nginx:
     network_mode: bridge
     build: nginx/
+    volumes:
+      - WordPress:/etc/data
     ports:
       - "4430:443"
   wordpress:
     network_mode: bridge
     build: wordpress/ 
+    volumes:
+      - WordPress:/etc/data
     ports:
       - "9000:9000"
-      - "3306:3306"
   mariadb:
     network_mode: bridge
     build: mariadb/ 
+    volumes:
+      - DB:/etc/data
     ports:
       - "3306:3306"
 
 volumes:
   DB:
-    driver: db 
-    driver_opts:
-      size: "1GiB"
+    # driver: db 
+    #driver_opts:
+    #  size: "1GiB"
   WordPress:
-    driver: db 
-    driver_opts:
-      size: "1GiB"
+    # driver: wp 
+    #driver_opts:
+    #  size: "1GiB"
 
