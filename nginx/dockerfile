@@ -2,14 +2,16 @@ FROM alpine:latest
 
 WORKDIR /code
 COPY nginx.conf . 
-COPY index.html . 
-COPY index1.html . 
+COPY 50x.html . 
 COPY cert.pem . 
+COPY fastcgi_params . 
+COPY mime.types . 
 COPY cert.key .
 
 
 RUN apk update && \
-	apk add nginx
+	apk add nginx && \
+	ln -sf /dev/stdout /var/log/nginx/error.log
 
 EXPOSE 443 
 

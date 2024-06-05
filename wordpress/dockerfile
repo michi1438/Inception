@@ -1,10 +1,19 @@
 FROM alpine:latest
 
 COPY wordpress.sh wordpress.sh
+COPY www.conf /etc/php83/php-fpm.d/www.conf
 
 RUN apk update && \
-	apk add php
-	
+	apk add php83 php83-fpm 
+
+COPY www.conf /etc/php83/php-fpm.d/www.conf
+
+RUN	adduser -S nginx && \
+	addgroup -S nginx && \
+	php-fpm83 && \
+	ln -sf /dev/stdout /var/log/php83/error.log
+
+
 CMD ["sh", "wordpress.sh"]
 
-EXPOSE 3306 9000
+EXPOSE 9000

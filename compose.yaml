@@ -6,27 +6,34 @@
 #    By: mguerga <mguerga@42lausanne.ch>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/03/12 11:15:41 by mguerga           #+#    #+#              #
-#    Updated: 2024/06/04 09:30:21 by mguerga          ###   ########.fr        #
+#    Updated: 2024/06/05 17:02:59 by mguerga          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 services:
   nginx:
-    network_mode: bridge
+    container_name: nginx 
+    depends_on:
+      - wordpress
+    networks: ["mynet"]
     build: nginx/
     volumes:
       - WordPress:/etc/data
     ports:
       - "4430:443"
   wordpress:
-    network_mode: bridge
+    container_name: wordp
+    networks: ["mynet"]
+    depends_on:
+      - mariadb 
     build: wordpress/ 
     volumes:
       - WordPress:/etc/data
     ports:
       - "9000:9000"
   mariadb:
-    network_mode: bridge
+    container_name: mariadb 
+    networks: ["mynet"]
     build: mariadb/ 
     volumes:
       - DB:/etc/data
@@ -43,3 +50,5 @@ volumes:
     #driver_opts:
     #  size: "1GiB"
 
+networks:
+  mynet:
