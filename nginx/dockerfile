@@ -10,7 +10,7 @@ COPY cert.key .
 
 
 RUN apk update && \
-	apk add nginx && \
+	apk add --no-cache nginx && \
 	ln -sf /dev/stdout /var/log/nginx/error.log
 
 EXPOSE 443 

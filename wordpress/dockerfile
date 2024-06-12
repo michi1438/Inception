@@ -1,10 +1,10 @@
 FROM alpine:latest
 
 COPY wordpress.sh wordpress.sh
-COPY www.conf /etc/php83/php-fpm.d/www.conf
+COPY wp-config.php . 
 
 RUN apk update && \
-	apk add php83 php83-fpm 
+	apk --no-cache add php83 php83-phar php83-fpm php83-mysqli bash less mysql-client curl
 
 COPY www.conf /etc/php83/php-fpm.d/www.conf
 

@@ -6,7 +6,7 @@
 #    By: mguerga <mguerga@42lausanne.ch>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/03/12 11:15:41 by mguerga           #+#    #+#              #
-#    Updated: 2024/06/05 17:02:59 by mguerga          ###   ########.fr        #
+#    Updated: 2024/06/11 13:18:48 by mguerga          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -34,9 +34,14 @@ services:
   mariadb:
     container_name: mariadb 
     networks: ["mynet"]
-    build: mariadb/ 
+    build: mariadb/
     volumes:
-      - DB:/etc/data
+      - DB:/var/lib/mysql
+    environment:
+      MARIADB_USER: wordp 
+      MARIADB_DATABASE: 'db1' 
+      MARIADB_PASSWORD: toor
+      MARIADB_ROOT_PASSWORD: toor
     ports:
       - "3306:3306"
 
