@@ -5,6 +5,8 @@ WORKDIR /
 COPY maria.sh . 
 COPY my.cnf . 
 
+VOLUME ["/home/mguerga/data/"]
+
 RUN apk update && \
 	apk add --no-cache mariadb mariadb-client && \
 	mkdir /run/mysqld && \

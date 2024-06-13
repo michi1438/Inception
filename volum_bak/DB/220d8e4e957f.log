@@ -1,0 +1,45 @@
+mariadbd, Version: 10.11.6-MariaDB-log (Alpine Linux). started with:
+Tcp port: 0  Unix socket: (null)
+Time		    Id Command	Argument
+240611 11:19:57	     5 Connect	root@localhost on  using Socket
+		     5 Query	select @@version_comment limit 1
+240611 11:20:13	     5 Query	SHOW DATABASES
+240611 11:20:15	     5 Quit	
+240611 11:22:07	     6 Connect	root@localhost on  using Socket
+		     6 Query	select @@version_comment limit 1
+240611 12:22:48	     6 Quit	
+240611 12:38:22	    14 Connect	root@localhost on  using Socket
+		    14 Query	select @@version_comment limit 1
+240611 12:38:24	    14 Query	SELECT host FROM mysql.user WHERE User = 'root'
+240611 12:39:07	    14 Quit	
+240611 12:40:15	    15 Connect	root@localhost on  using Socket
+		    15 Query	select @@version_comment limit 1
+240611 12:40:25	    15 Query	CREATE USER 'root'@'mariadb' IDENTIFIED BY 'toor'
+240611 12:40:30	    15 Query	SELECT host FROM mysql.user WHERE User = 'root'
+240611 12:42:33	    15 Query	GRANT ALL PRIVILEGES ON *.* TO 'root'@'mariadb'
+240611 12:42:39	    15 Query	SELECT host FROM mysql.user WHERE User = 'root'
+240611 12:42:56	    15 Query	FLUSH PRIVILEGES
+240611 12:43:10	    15 Quit	
+240611 12:44:00	    23 Connect	root@localhost on  using Socket
+		    23 Query	select @@version_comment limit 1
+240611 12:44:09	    23 Query	SELECT DATABASE()
+240611 12:44:14	    23 Query	SELECT DATABASE()
+240611 12:44:30	    23 Query	Select root
+240611 12:44:39	    23 Query	SELECT root
+240611 12:45:00	    23 Query	CREATE USER 'root'@'%' IDENTIFIED BY 'toor'
+240611 12:45:16	    23 Query	GRANT ALL PRIVILEGES ON *.* TO 'root'@'%'
+240611 12:45:22	    23 Query	FLUSH PRIVILEGES
+240611 12:46:17	    23 Quit	
+240611 12:46:36	    24 Connect	root@wordp.inception_mynet on  using TCP/IP
+		    24 Query	select @@version_comment limit 1
+240611 12:47:31	    24 Quit	
+240611 12:47:37	    25 Connect	root@wordp.inception_mynet on  using TCP/IP
+		    25 Connect	Access denied for user 'root'@'wordp.inception_mynet' (using password: NO)
+		    26 Connect	root@wordp.inception_mynet on  using TCP/IP
+		    26 Connect	Access denied for user 'root'@'wordp.inception_mynet' (using password: NO)
+240611 12:48:03	    27 Connect	root@wordp.inception_mynet on  using TCP/IP
+		    27 Query	select @@version_comment limit 1
+240611 12:48:19	    27 Query	SELECT host FROM mysql.user WHERE User = 'root'
+240611 12:49:02	    27 Quit	
+240611 12:49:40	    28 Connect	root@wordp.inception_mynet on  using TCP/IP
+		    28 Connect	Access denied for user 'root'@'wordp.inception_mynet' (using password: NO)

@@ -1,0 +1,712 @@
+mariadbd, Version: 10.11.6-MariaDB-log (Alpine Linux). started with:
+Tcp port: 0  Unix socket: (null)
+Time		    Id Command	Argument
+240612  7:50:11	     3 Connect	root@wordp.inception_mynet on  using TCP/IP
+		     3 Query	SET NAMES utf8mb4
+		     3 Query	SET NAMES 'utf8mb4' COLLATE 'utf8mb4_unicode_520_ci'
+		     3 Query	SELECT @@SESSION.sql_mode
+		     3 Query	SET SESSION sql_mode='ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION'
+		     3 Init DB	mysql
+		     3 Query	SELECT option_name, option_value FROM wp_options WHERE autoload = 'yes'
+		     3 Query	SELECT option_name, option_value FROM wp_options
+		     3 Query	SELECT option_value FROM wp_options WHERE option_name = 'siteurl'
+		     3 Query	DESCRIBE wp_users
+		     3 Query	DESCRIBE wp_usermeta
+		     3 Query	DESCRIBE wp_posts
+		     3 Query	DESCRIBE wp_comments
+		     3 Query	DESCRIBE wp_links
+		     3 Query	DESCRIBE wp_options
+		     3 Query	DESCRIBE wp_postmeta
+		     3 Query	DESCRIBE wp_terms
+		     3 Query	DESCRIBE wp_term_taxonomy
+		     3 Query	DESCRIBE wp_term_relationships
+		     3 Query	DESCRIBE wp_termmeta
+		     3 Query	DESCRIBE wp_commentmeta
+		     3 Quit	
+		     4 Connect	root@wordp.inception_mynet on  using TCP/IP
+		     4 Query	SET NAMES utf8mb4
+		     4 Query	SET NAMES 'utf8mb4' COLLATE 'utf8mb4_unicode_520_ci'
+		     4 Query	SELECT @@SESSION.sql_mode
+		     4 Query	SET SESSION sql_mode='ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION'
+		     4 Init DB	mysql
+		     4 Query	SELECT option_value FROM wp_options WHERE option_name = 'siteurl'
+		     4 Query	DESCRIBE wp_users
+		     4 Query	DESCRIBE wp_usermeta
+		     4 Query	DESCRIBE wp_posts
+		     4 Query	DESCRIBE wp_comments
+		     4 Query	DESCRIBE wp_links
+		     4 Query	DESCRIBE wp_options
+		     4 Query	DESCRIBE wp_postmeta
+		     4 Query	DESCRIBE wp_terms
+		     4 Query	DESCRIBE wp_term_taxonomy
+		     4 Query	DESCRIBE wp_term_relationships
+		     4 Query	DESCRIBE wp_termmeta
+		     4 Query	DESCRIBE wp_commentmeta
+240612  7:50:12	     4 Query	SELECT option_value FROM wp_options WHERE option_name = 'siteurl' LIMIT 1
+		     4 Query	SELECT option_value FROM wp_options WHERE option_name = 'siteurl' LIMIT 1
+		     4 Query	SELECT option_value FROM wp_options WHERE option_name = 'home' LIMIT 1
+		     4 Query	SELECT option_value FROM wp_options WHERE option_name = 'siteurl' LIMIT 1
+		     4 Query	SELECT option_value FROM wp_options WHERE option_name = 'siteurl' LIMIT 1
+		     4 Query	SELECT option_value FROM wp_options WHERE option_name = 'wp_attachment_pages_enabled' LIMIT 1
+		     4 Query	SELECT option_value FROM wp_options WHERE option_name = 'cron' LIMIT 1
+		     4 Query	SELECT option_value FROM wp_options WHERE option_name = 'active_plugins' LIMIT 1
+		     4 Query	SELECT option_value FROM wp_options WHERE option_name = 'hack_file' LIMIT 1
+		     4 Query	SELECT option_value FROM wp_options WHERE option_name = 'permalink_structure' LIMIT 1
+		     4 Query	SELECT option_value FROM wp_options WHERE option_name = 'wp_user_roles' LIMIT 1
+		     4 Query	SELECT option_value FROM wp_options WHERE option_name = 'stylesheet' LIMIT 1
+		     4 Query	SELECT option_value FROM wp_options WHERE option_name = 'template' LIMIT 1
+		     4 Query	SELECT option_value FROM wp_options WHERE option_name = 'stylesheet' LIMIT 1
+		     4 Query	SELECT option_value FROM wp_options WHERE option_name = 'stylesheet' LIMIT 1
+		     4 Query	SELECT option_value FROM wp_options WHERE option_name = 'template' LIMIT 1
+		     4 Query	SELECT option_value FROM wp_options WHERE option_name = 'WPLANG' LIMIT 1
+		     4 Query	SELECT option_value FROM wp_options WHERE option_name = 'stylesheet' LIMIT 1
+		     4 Query	SELECT option_value FROM wp_options WHERE option_name = 'stylesheet' LIMIT 1
+		     4 Query	SELECT option_value FROM wp_options WHERE option_name = 'stylesheet' LIMIT 1
+		     4 Query	SELECT option_value FROM wp_options WHERE option_name = 'stylesheet' LIMIT 1
+		     4 Query	SELECT option_value FROM wp_options WHERE option_name = 'template' LIMIT 1
+		     4 Query	SELECT option_value FROM wp_options WHERE option_name = 'stylesheet' LIMIT 1
+		     4 Query	SELECT option_value FROM wp_options WHERE option_name = 'cron' LIMIT 1
+		     4 Query	SELECT option_value FROM wp_options WHERE option_name = 'wp_attachment_pages_enabled' LIMIT 1
+		     4 Query	SELECT option_value FROM wp_options WHERE option_name = 'category_base' LIMIT 1
+		     4 Query	SELECT option_value FROM wp_options WHERE option_name = 'category_base' LIMIT 1
+		     4 Query	SELECT option_value FROM wp_options WHERE option_name = 'tag_base' LIMIT 1
+		     4 Query	SELECT option_value FROM wp_options WHERE option_name = 'tag_base' LIMIT 1
+		     4 Query	SELECT option_value FROM wp_options WHERE option_name = 'permalink_structure' LIMIT 1
+		     4 Query	SELECT option_value FROM wp_options WHERE option_name = 'permalink_structure' LIMIT 1
+		     4 Query	SELECT option_value FROM wp_options WHERE option_name = 'permalink_structure' LIMIT 1
+		     4 Query	SELECT option_value FROM wp_options WHERE option_name = 'permalink_structure' LIMIT 1
+		     4 Query	SELECT option_value FROM wp_options WHERE option_name = 'permalink_structure' LIMIT 1
+		     4 Query	SELECT option_value FROM wp_options WHERE option_name = 'permalink_structure' LIMIT 1
+		     4 Query	SELECT option_value FROM wp_options WHERE option_name = 'siteurl'
+		     4 Query	DESCRIBE wp_users
+		     4 Query	DESCRIBE wp_usermeta
+		     4 Query	DESCRIBE wp_posts
+		     4 Query	DESCRIBE wp_comments
+		     4 Query	DESCRIBE wp_links
+		     4 Query	DESCRIBE wp_options
+		     4 Query	DESCRIBE wp_postmeta
+		     4 Query	DESCRIBE wp_terms
+		     4 Query	DESCRIBE wp_term_taxonomy
+		     4 Query	DESCRIBE wp_term_relationships
+		     4 Query	DESCRIBE wp_termmeta
+		     4 Query	DESCRIBE wp_commentmeta
+		     4 Query	SELECT option_value FROM wp_options WHERE option_name = 'use_smilies' LIMIT 1
+		     4 Query	SELECT option_value FROM wp_options WHERE option_name = 'home' LIMIT 1
+		     4 Query	SELECT option_value FROM wp_options WHERE option_name = 'home' LIMIT 1
+		     4 Query	SELECT option_value FROM wp_options WHERE option_name = 'home' LIMIT 1
+		     4 Query	SELECT option_value FROM wp_options WHERE option_name = 'home' LIMIT 1
+		     4 Query	SELECT option_value FROM wp_options WHERE option_name = 'blog_public' LIMIT 1
+		     4 Query	SELECT option_value FROM wp_options WHERE option_name = 'blog_charset' LIMIT 1
+		     4 Query	SELECT option_value FROM wp_options WHERE option_name = 'cron' LIMIT 1
+		     4 Query	SELECT option_value FROM wp_options WHERE option_name = 'cron' LIMIT 1
+		     4 Query	SELECT option_value FROM wp_options WHERE option_name = 'cron' LIMIT 1
+		     4 Query	SELECT option_value FROM wp_options WHERE option_name = 'siteurl' LIMIT 1
+		     4 Query	SELECT option_value FROM wp_options WHERE option_name = 'stylesheet' LIMIT 1
+		     4 Query	SELECT option_value FROM wp_options WHERE option_name = 'theme_switched' LIMIT 1
+		     4 Query	SELECT option_value FROM wp_options WHERE option_name = 'cron' LIMIT 1
+		     4 Query	SELECT option_value FROM wp_options WHERE option_name = 'siteurl'
+		     4 Query	DESCRIBE wp_users
+		     4 Query	DESCRIBE wp_usermeta
+		     4 Query	DESCRIBE wp_posts
+		     4 Query	DESCRIBE wp_comments
+		     4 Query	DESCRIBE wp_links
+		     4 Query	DESCRIBE wp_options
+		     4 Query	DESCRIBE wp_postmeta
+		     4 Query	DESCRIBE wp_terms
+		     4 Query	DESCRIBE wp_term_taxonomy
+		     4 Query	DESCRIBE wp_term_relationships
+		     4 Query	DESCRIBE wp_termmeta
+		     4 Query	DESCRIBE wp_commentmeta
+		     4 Query	SELECT option_value FROM wp_options WHERE option_name = 'ftp_credentials' LIMIT 1
+		     4 Query	SELECT option_value FROM wp_options WHERE option_name = 'nonce_key' LIMIT 1
+		     4 Query	SELECT option_value FROM wp_options WHERE option_name = 'nonce_key' LIMIT 1
+		     4 Query	SELECT option_value FROM wp_options WHERE option_name = 'nonce_key' LIMIT 1
+		     4 Query	INSERT INTO `wp_options` (`option_name`, `option_value`, `autoload`) VALUES ('nonce_key', 'QhZ.g4l=R]]M=6>dPR{2y<0m6ktM,Dx]W]5W+,+<D#<@]G-vpeb8GEsE7K2i*UY}', 'no') ON DUPLICATE KEY UPDATE `option_name` = VALUES(`option_name`), `option_value` = VALUES(`option_value`), `autoload` = VALUES(`autoload`)
+		     4 Query	SELECT option_value FROM wp_options WHERE option_name = 'nonce_salt' LIMIT 1
+		     4 Query	SELECT option_value FROM wp_options WHERE option_name = 'nonce_salt' LIMIT 1
+		     4 Query	SELECT option_value FROM wp_options WHERE option_name = 'nonce_salt' LIMIT 1
+		     4 Query	INSERT INTO `wp_options` (`option_name`, `option_value`, `autoload`) VALUES ('nonce_salt', 'q5RZX0-o9v1}vs7:*07vUUQd3)4<h]9cB/XlkPH0dGXl.:JkLuaE?z4Ixl|h@xFO', 'no') ON DUPLICATE KEY UPDATE `option_name` = VALUES(`option_name`), `option_value` = VALUES(`option_value`), `autoload` = VALUES(`autoload`)
+		     4 Query	SELECT option_value FROM wp_options WHERE option_name = 'html_type' LIMIT 1
+		     4 Query	SELECT option_value FROM wp_options WHERE option_name = 'html_type' LIMIT 1
+		     4 Query	SHOW TABLES LIKE 'wp\\_users'
+		     4 Query	SELECT option_name, option_value FROM wp_options WHERE autoload = 'yes'
+		     4 Query	SELECT option_name, option_value FROM wp_options
+		     4 Query	SELECT option_value FROM wp_options WHERE option_name = 'siteurl' LIMIT 1
+		     4 Query	SELECT option_value FROM wp_options WHERE option_name = 'siteurl' LIMIT 1
+		     4 Query	SELECT option_value FROM wp_options WHERE option_name = 'permalink_structure' LIMIT 1
+		     4 Query	SELECT option_value FROM wp_options WHERE option_name = 'home' LIMIT 1
+		     4 Query	SELECT option_value FROM wp_options WHERE option_name = 'home' LIMIT 1
+		     4 Query	SELECT option_value FROM wp_options WHERE option_name = 'siteurl' LIMIT 1
+		     4 Query	SELECT option_value FROM wp_options WHERE option_name = 'siteurl' LIMIT 1
+		     4 Query	SELECT option_value FROM wp_options WHERE option_name = 'siteurl' LIMIT 1
+		     4 Query	SELECT option_value FROM wp_options WHERE option_name = 'siteurl' LIMIT 1
+		     4 Query	SELECT option_value FROM wp_options WHERE option_name = 'siteurl' LIMIT 1
+		     4 Query	SELECT option_value FROM wp_options WHERE option_name = 'siteurl' LIMIT 1
+		     4 Query	SELECT option_value FROM wp_options WHERE option_name = 'siteurl' LIMIT 1
+		     4 Query	SELECT option_value FROM wp_options WHERE option_name = 'start_of_week' LIMIT 1
+		     4 Query	SELECT option_value FROM wp_options WHERE option_name = 'time_format' LIMIT 1
+		     4 Query	SELECT option_value FROM wp_options WHERE option_name = 'date_format' LIMIT 1
+		     4 Query	SELECT option_value FROM wp_options WHERE option_name = 'siteurl' LIMIT 1
+		     4 Query	SELECT option_value FROM wp_options WHERE option_name = 'siteurl' LIMIT 1
+		     4 Query	SELECT option_value FROM wp_options WHERE option_name = 'siteurl' LIMIT 1
+		     4 Query	SELECT option_value FROM wp_options WHERE option_name = 'permalink_structure' LIMIT 1
+		     4 Query	SELECT option_value FROM wp_options WHERE option_name = 'home' LIMIT 1
+		     4 Query	SELECT option_value FROM wp_options WHERE option_name = 'home' LIMIT 1
+		     4 Query	SELECT option_value FROM wp_options WHERE option_name = 'siteurl' LIMIT 1
+		     4 Query	SELECT option_value FROM wp_options WHERE option_name = 'timezone_string' LIMIT 1
+		     4 Query	SELECT option_value FROM wp_options WHERE option_name = 'timezone_string' LIMIT 1
+		     4 Query	SELECT option_value FROM wp_options WHERE option_name = 'gmt_offset' LIMIT 1
+		     4 Query	SELECT option_value FROM wp_options WHERE option_name = 'start_of_week' LIMIT 1
+		     4 Query	SELECT option_value FROM wp_options WHERE option_name = 'time_format' LIMIT 1
+		     4 Query	SELECT option_value FROM wp_options WHERE option_name = 'date_format' LIMIT 1
+		     4 Query	SELECT option_value FROM wp_options WHERE option_name = 'siteurl' LIMIT 1
+		     4 Query	SELECT option_value FROM wp_options WHERE option_name = 'siteurl' LIMIT 1
+		     4 Quit	
+240612  7:50:27	     5 Connect	root@wordp.inception_mynet on  using TCP/IP
+		     5 Query	SET NAMES utf8mb4
+		     5 Query	SET NAMES 'utf8mb4' COLLATE 'utf8mb4_unicode_520_ci'
+		     5 Query	SELECT @@SESSION.sql_mode
+		     5 Query	SET SESSION sql_mode='ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION'
+		     5 Init DB	mysql
+		     5 Query	SELECT option_value FROM wp_options WHERE option_name = 'siteurl'
+		     5 Query	DESCRIBE wp_users
+		     5 Query	DESCRIBE wp_usermeta
+		     5 Query	DESCRIBE wp_posts
+		     5 Query	DESCRIBE wp_comments
+		     5 Query	DESCRIBE wp_links
+		     5 Query	DESCRIBE wp_options
+		     5 Query	DESCRIBE wp_postmeta
+		     5 Query	DESCRIBE wp_terms
+		     5 Query	DESCRIBE wp_term_taxonomy
+		     5 Query	DESCRIBE wp_term_relationships
+		     5 Query	DESCRIBE wp_termmeta
+		     5 Query	DESCRIBE wp_commentmeta
+		     5 Query	SELECT option_value FROM wp_options WHERE option_name = 'siteurl' LIMIT 1
+		     5 Query	SELECT option_value FROM wp_options WHERE option_name = 'siteurl' LIMIT 1
+		     5 Query	SELECT option_value FROM wp_options WHERE option_name = 'home' LIMIT 1
+		     5 Query	SELECT option_value FROM wp_options WHERE option_name = 'siteurl' LIMIT 1
+		     5 Query	SELECT option_value FROM wp_options WHERE option_name = 'siteurl' LIMIT 1
+		     5 Query	SELECT option_value FROM wp_options WHERE option_name = 'wp_attachment_pages_enabled' LIMIT 1
+		     5 Query	SELECT option_value FROM wp_options WHERE option_name = 'cron' LIMIT 1
+		     5 Query	SELECT option_value FROM wp_options WHERE option_name = 'active_plugins' LIMIT 1
+		     5 Query	SELECT option_value FROM wp_options WHERE option_name = 'hack_file' LIMIT 1
+		     5 Query	SELECT option_value FROM wp_options WHERE option_name = 'permalink_structure' LIMIT 1
+		     5 Query	SELECT option_value FROM wp_options WHERE option_name = 'wp_user_roles' LIMIT 1
+		     5 Query	SELECT option_value FROM wp_options WHERE option_name = 'stylesheet' LIMIT 1
+		     5 Query	SELECT option_value FROM wp_options WHERE option_name = 'template' LIMIT 1
+		     5 Query	SELECT option_value FROM wp_options WHERE option_name = 'stylesheet' LIMIT 1
+		     5 Query	SELECT option_value FROM wp_options WHERE option_name = 'stylesheet' LIMIT 1
+		     5 Query	SELECT option_value FROM wp_options WHERE option_name = 'template' LIMIT 1
+		     5 Query	SELECT option_value FROM wp_options WHERE option_name = 'WPLANG' LIMIT 1
+		     5 Query	SELECT option_value FROM wp_options WHERE option_name = 'stylesheet' LIMIT 1
+		     5 Query	SELECT option_value FROM wp_options WHERE option_name = 'stylesheet' LIMIT 1
+		     5 Query	SELECT option_value FROM wp_options WHERE option_name = 'stylesheet' LIMIT 1
+		     5 Query	SELECT option_value FROM wp_options WHERE option_name = 'stylesheet' LIMIT 1
+		     5 Query	SELECT option_value FROM wp_options WHERE option_name = 'template' LIMIT 1
+		     5 Query	SELECT option_value FROM wp_options WHERE option_name = 'stylesheet' LIMIT 1
+		     5 Query	SELECT option_value FROM wp_options WHERE option_name = 'cron' LIMIT 1
+		     5 Query	SELECT option_value FROM wp_options WHERE option_name = 'wp_attachment_pages_enabled' LIMIT 1
+		     5 Query	SELECT option_value FROM wp_options WHERE option_name = 'category_base' LIMIT 1
+		     5 Query	SELECT option_value FROM wp_options WHERE option_name = 'category_base' LIMIT 1
+		     5 Query	SELECT option_value FROM wp_options WHERE option_name = 'tag_base' LIMIT 1
+		     5 Query	SELECT option_value FROM wp_options WHERE option_name = 'tag_base' LIMIT 1
+		     5 Query	SELECT option_value FROM wp_options WHERE option_name = 'permalink_structure' LIMIT 1
+		     5 Query	SELECT option_value FROM wp_options WHERE option_name = 'permalink_structure' LIMIT 1
+		     5 Query	SELECT option_value FROM wp_options WHERE option_name = 'permalink_structure' LIMIT 1
+		     5 Query	SELECT option_value FROM wp_options WHERE option_name = 'permalink_structure' LIMIT 1
+		     5 Query	SELECT option_value FROM wp_options WHERE option_name = 'permalink_structure' LIMIT 1
+		     5 Query	SELECT option_value FROM wp_options WHERE option_name = 'permalink_structure' LIMIT 1
+		     5 Query	SELECT option_value FROM wp_options WHERE option_name = 'siteurl'
+		     5 Query	DESCRIBE wp_users
+		     5 Query	DESCRIBE wp_usermeta
+		     5 Query	DESCRIBE wp_posts
+		     5 Query	DESCRIBE wp_comments
+		     5 Query	DESCRIBE wp_links
+		     5 Query	DESCRIBE wp_options
+		     5 Query	DESCRIBE wp_postmeta
+		     5 Query	DESCRIBE wp_terms
+		     5 Query	DESCRIBE wp_term_taxonomy
+		     5 Query	DESCRIBE wp_term_relationships
+		     5 Query	DESCRIBE wp_termmeta
+		     5 Query	DESCRIBE wp_commentmeta
+		     5 Query	SELECT option_value FROM wp_options WHERE option_name = 'use_smilies' LIMIT 1
+		     5 Query	SELECT option_value FROM wp_options WHERE option_name = 'home' LIMIT 1
+		     5 Query	SELECT option_value FROM wp_options WHERE option_name = 'home' LIMIT 1
+		     5 Query	SELECT option_value FROM wp_options WHERE option_name = 'home' LIMIT 1
+		     5 Query	SELECT option_value FROM wp_options WHERE option_name = 'home' LIMIT 1
+		     5 Query	SELECT option_value FROM wp_options WHERE option_name = 'blog_public' LIMIT 1
+		     5 Query	SELECT option_value FROM wp_options WHERE option_name = 'blog_charset' LIMIT 1
+		     5 Query	SELECT option_value FROM wp_options WHERE option_name = 'cron' LIMIT 1
+		     5 Query	SELECT option_value FROM wp_options WHERE option_name = 'cron' LIMIT 1
+		     5 Query	SELECT option_value FROM wp_options WHERE option_name = 'cron' LIMIT 1
+		     5 Query	SELECT option_value FROM wp_options WHERE option_name = 'siteurl' LIMIT 1
+		     5 Query	SELECT option_value FROM wp_options WHERE option_name = 'stylesheet' LIMIT 1
+		     5 Query	SELECT option_value FROM wp_options WHERE option_name = 'theme_switched' LIMIT 1
+		     5 Query	SELECT option_value FROM wp_options WHERE option_name = 'cron' LIMIT 1
+		     5 Query	SELECT option_value FROM wp_options WHERE option_name = 'siteurl'
+		     5 Query	DESCRIBE wp_users
+		     5 Query	DESCRIBE wp_usermeta
+		     5 Query	DESCRIBE wp_posts
+		     5 Query	DESCRIBE wp_comments
+		     5 Query	DESCRIBE wp_links
+		     5 Query	DESCRIBE wp_options
+		     5 Query	DESCRIBE wp_postmeta
+		     5 Query	DESCRIBE wp_terms
+		     5 Query	DESCRIBE wp_term_taxonomy
+		     5 Query	DESCRIBE wp_term_relationships
+		     5 Query	DESCRIBE wp_termmeta
+		     5 Query	DESCRIBE wp_commentmeta
+		     5 Query	SELECT option_value FROM wp_options WHERE option_name = 'ftp_credentials' LIMIT 1
+		     5 Query	SELECT option_value FROM wp_options WHERE option_name = 'nonce_key' LIMIT 1
+		     5 Query	SELECT option_value FROM wp_options WHERE option_name = 'nonce_key' LIMIT 1
+		     5 Query	SELECT option_value FROM wp_options WHERE option_name = 'nonce_key' LIMIT 1
+		     5 Query	INSERT INTO `wp_options` (`option_name`, `option_value`, `autoload`) VALUES ('nonce_key', 'iE{DJh$1co{|_F0sNF2c|WwN0A(P pjsVa)WY~1v~xk3LOh[o.#3+]h+^n+Ld(:l', 'no') ON DUPLICATE KEY UPDATE `option_name` = VALUES(`option_name`), `option_value` = VALUES(`option_value`), `autoload` = VALUES(`autoload`)
+		     5 Query	SELECT option_value FROM wp_options WHERE option_name = 'nonce_salt' LIMIT 1
+		     5 Query	SELECT option_value FROM wp_options WHERE option_name = 'nonce_salt' LIMIT 1
+		     5 Query	SELECT option_value FROM wp_options WHERE option_name = 'nonce_salt' LIMIT 1
+		     5 Query	INSERT INTO `wp_options` (`option_name`, `option_value`, `autoload`) VALUES ('nonce_salt', '.&_^1n^B^Z5KAU&}5JJhx$:R:ks3vDs@$Khe9{M:GXw%WLUa,Kpe;$3eRd4^k:r(', 'no') ON DUPLICATE KEY UPDATE `option_name` = VALUES(`option_name`), `option_value` = VALUES(`option_value`), `autoload` = VALUES(`autoload`)
+		     5 Query	SELECT option_value FROM wp_options WHERE option_name = 'html_type' LIMIT 1
+		     5 Query	SELECT option_value FROM wp_options WHERE option_name = 'html_type' LIMIT 1
+		     5 Query	SHOW TABLES LIKE 'wp\\_users'
+		     5 Query	SELECT option_value FROM wp_options WHERE option_name = 'siteurl' LIMIT 1
+		     5 Query	SELECT option_value FROM wp_options WHERE option_name = 'siteurl' LIMIT 1
+		     5 Query	SELECT option_value FROM wp_options WHERE option_name = 'permalink_structure' LIMIT 1
+		     5 Query	SELECT option_value FROM wp_options WHERE option_name = 'home' LIMIT 1
+		     5 Query	SELECT option_value FROM wp_options WHERE option_name = 'home' LIMIT 1
+		     5 Query	SELECT option_value FROM wp_options WHERE option_name = 'siteurl' LIMIT 1
+		     5 Query	SELECT option_value FROM wp_options WHERE option_name = 'siteurl' LIMIT 1
+		     5 Query	SELECT option_value FROM wp_options WHERE option_name = 'siteurl' LIMIT 1
+		     5 Query	SELECT option_value FROM wp_options WHERE option_name = 'siteurl' LIMIT 1
+		     5 Query	SELECT option_value FROM wp_options WHERE option_name = 'siteurl' LIMIT 1
+		     5 Query	SELECT option_value FROM wp_options WHERE option_name = 'siteurl' LIMIT 1
+		     5 Query	SELECT option_value FROM wp_options WHERE option_name = 'siteurl' LIMIT 1
+		     5 Query	SELECT option_value FROM wp_options WHERE option_name = 'start_of_week' LIMIT 1
+		     5 Query	SELECT option_value FROM wp_options WHERE option_name = 'time_format' LIMIT 1
+		     5 Query	SELECT option_value FROM wp_options WHERE option_name = 'date_format' LIMIT 1
+		     5 Query	SELECT option_value FROM wp_options WHERE option_name = 'siteurl' LIMIT 1
+		     5 Query	SELECT option_value FROM wp_options WHERE option_name = 'siteurl' LIMIT 1
+		     5 Query	SELECT option_value FROM wp_options WHERE option_name = 'siteurl' LIMIT 1
+		     5 Query	SELECT option_value FROM wp_options WHERE option_name = 'permalink_structure' LIMIT 1
+		     5 Query	SELECT option_value FROM wp_options WHERE option_name = 'home' LIMIT 1
+		     5 Query	SELECT option_value FROM wp_options WHERE option_name = 'home' LIMIT 1
+		     5 Query	SELECT option_value FROM wp_options WHERE option_name = 'siteurl' LIMIT 1
+		     5 Query	SELECT option_value FROM wp_options WHERE option_name = 'timezone_string' LIMIT 1
+		     5 Query	SELECT option_value FROM wp_options WHERE option_name = 'timezone_string' LIMIT 1
+		     5 Query	SELECT option_value FROM wp_options WHERE option_name = 'gmt_offset' LIMIT 1
+		     5 Query	SELECT option_value FROM wp_options WHERE option_name = 'start_of_week' LIMIT 1
+		     5 Query	SELECT option_value FROM wp_options WHERE option_name = 'time_format' LIMIT 1
+		     5 Query	SELECT option_value FROM wp_options WHERE option_name = 'date_format' LIMIT 1
+		     5 Query	SELECT option_value FROM wp_options WHERE option_name = 'siteurl' LIMIT 1
+		     5 Query	SELECT option_value FROM wp_options WHERE option_name = 'siteurl' LIMIT 1
+		     5 Quit	
+240612  7:54:21	     6 Connect	root@wordp.inception_mynet on  using TCP/IP
+		     6 Query	SET NAMES utf8mb4
+		     6 Query	SET NAMES 'utf8mb4' COLLATE 'utf8mb4_unicode_520_ci'
+		     6 Query	SELECT @@SESSION.sql_mode
+		     6 Query	SET SESSION sql_mode='ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION'
+		     6 Init DB	mysql
+		     6 Query	SELECT option_value FROM wp_options WHERE option_name = 'siteurl'
+		     6 Query	DESCRIBE wp_users
+		     6 Query	DESCRIBE wp_usermeta
+		     6 Query	DESCRIBE wp_posts
+		     6 Query	DESCRIBE wp_comments
+		     6 Query	DESCRIBE wp_links
+		     6 Query	DESCRIBE wp_options
+		     6 Query	DESCRIBE wp_postmeta
+		     6 Query	DESCRIBE wp_terms
+		     6 Query	DESCRIBE wp_term_taxonomy
+		     6 Query	DESCRIBE wp_term_relationships
+		     6 Query	DESCRIBE wp_termmeta
+		     6 Query	DESCRIBE wp_commentmeta
+		     6 Query	SELECT option_value FROM wp_options WHERE option_name = 'siteurl' LIMIT 1
+		     6 Query	SELECT option_value FROM wp_options WHERE option_name = 'siteurl' LIMIT 1
+		     6 Query	SELECT option_value FROM wp_options WHERE option_name = 'home' LIMIT 1
+		     6 Query	SELECT option_value FROM wp_options WHERE option_name = 'siteurl' LIMIT 1
+		     6 Query	SELECT option_value FROM wp_options WHERE option_name = 'siteurl' LIMIT 1
+		     6 Query	SELECT option_value FROM wp_options WHERE option_name = 'wp_attachment_pages_enabled' LIMIT 1
+		     6 Query	SELECT option_value FROM wp_options WHERE option_name = 'cron' LIMIT 1
+		     6 Query	SELECT option_value FROM wp_options WHERE option_name = 'active_plugins' LIMIT 1
+		     6 Query	SELECT option_value FROM wp_options WHERE option_name = 'hack_file' LIMIT 1
+		     6 Query	SELECT option_value FROM wp_options WHERE option_name = 'permalink_structure' LIMIT 1
+		     6 Query	SELECT option_value FROM wp_options WHERE option_name = 'wp_user_roles' LIMIT 1
+		     6 Query	SELECT option_value FROM wp_options WHERE option_name = 'stylesheet' LIMIT 1
+		     6 Query	SELECT option_value FROM wp_options WHERE option_name = 'template' LIMIT 1
+		     6 Query	SELECT option_value FROM wp_options WHERE option_name = 'stylesheet' LIMIT 1
+		     6 Query	SELECT option_value FROM wp_options WHERE option_name = 'stylesheet' LIMIT 1
+		     6 Query	SELECT option_value FROM wp_options WHERE option_name = 'template' LIMIT 1
+		     6 Query	SELECT option_value FROM wp_options WHERE option_name = 'WPLANG' LIMIT 1
+		     6 Query	SELECT option_value FROM wp_options WHERE option_name = 'stylesheet' LIMIT 1
+		     6 Query	SELECT option_value FROM wp_options WHERE option_name = 'stylesheet' LIMIT 1
+		     6 Query	SELECT option_value FROM wp_options WHERE option_name = 'stylesheet' LIMIT 1
+		     6 Query	SELECT option_value FROM wp_options WHERE option_name = 'stylesheet' LIMIT 1
+		     6 Query	SELECT option_value FROM wp_options WHERE option_name = 'template' LIMIT 1
+		     6 Query	SELECT option_value FROM wp_options WHERE option_name = 'stylesheet' LIMIT 1
+		     6 Query	SELECT option_value FROM wp_options WHERE option_name = 'cron' LIMIT 1
+		     6 Query	SELECT option_value FROM wp_options WHERE option_name = 'wp_attachment_pages_enabled' LIMIT 1
+		     6 Query	SELECT option_value FROM wp_options WHERE option_name = 'category_base' LIMIT 1
+		     6 Query	SELECT option_value FROM wp_options WHERE option_name = 'category_base' LIMIT 1
+		     6 Query	SELECT option_value FROM wp_options WHERE option_name = 'tag_base' LIMIT 1
+		     6 Query	SELECT option_value FROM wp_options WHERE option_name = 'tag_base' LIMIT 1
+		     6 Query	SELECT option_value FROM wp_options WHERE option_name = 'permalink_structure' LIMIT 1
+		     6 Query	SELECT option_value FROM wp_options WHERE option_name = 'permalink_structure' LIMIT 1
+		     6 Query	SELECT option_value FROM wp_options WHERE option_name = 'permalink_structure' LIMIT 1
+		     6 Query	SELECT option_value FROM wp_options WHERE option_name = 'permalink_structure' LIMIT 1
+		     6 Query	SELECT option_value FROM wp_options WHERE option_name = 'permalink_structure' LIMIT 1
+		     6 Query	SELECT option_value FROM wp_options WHERE option_name = 'permalink_structure' LIMIT 1
+		     6 Query	SELECT option_value FROM wp_options WHERE option_name = 'siteurl'
+		     6 Query	DESCRIBE wp_users
+		     6 Query	DESCRIBE wp_usermeta
+		     6 Query	DESCRIBE wp_posts
+		     6 Query	DESCRIBE wp_comments
+		     6 Query	DESCRIBE wp_links
+		     6 Query	DESCRIBE wp_options
+		     6 Query	DESCRIBE wp_postmeta
+		     6 Query	DESCRIBE wp_terms
+		     6 Query	DESCRIBE wp_term_taxonomy
+		     6 Query	DESCRIBE wp_term_relationships
+		     6 Query	DESCRIBE wp_termmeta
+		     6 Query	DESCRIBE wp_commentmeta
+		     6 Query	SELECT option_value FROM wp_options WHERE option_name = 'use_smilies' LIMIT 1
+		     6 Query	SELECT option_value FROM wp_options WHERE option_name = 'home' LIMIT 1
+		     6 Query	SELECT option_value FROM wp_options WHERE option_name = 'home' LIMIT 1
+		     6 Query	SELECT option_value FROM wp_options WHERE option_name = 'home' LIMIT 1
+		     6 Query	SELECT option_value FROM wp_options WHERE option_name = 'home' LIMIT 1
+		     6 Query	SELECT option_value FROM wp_options WHERE option_name = 'blog_public' LIMIT 1
+		     6 Query	SELECT option_value FROM wp_options WHERE option_name = 'blog_charset' LIMIT 1
+		     6 Query	SELECT option_value FROM wp_options WHERE option_name = 'cron' LIMIT 1
+		     6 Query	SELECT option_value FROM wp_options WHERE option_name = 'cron' LIMIT 1
+		     6 Query	SELECT option_value FROM wp_options WHERE option_name = 'cron' LIMIT 1
+		     6 Query	SELECT option_value FROM wp_options WHERE option_name = 'siteurl' LIMIT 1
+		     6 Query	SELECT option_value FROM wp_options WHERE option_name = 'stylesheet' LIMIT 1
+		     6 Query	SELECT option_value FROM wp_options WHERE option_name = 'theme_switched' LIMIT 1
+		     6 Query	SELECT option_value FROM wp_options WHERE option_name = 'cron' LIMIT 1
+		     6 Query	SELECT option_value FROM wp_options WHERE option_name = 'siteurl'
+		     6 Query	DESCRIBE wp_users
+		     6 Query	DESCRIBE wp_usermeta
+		     6 Query	DESCRIBE wp_posts
+		     6 Query	DESCRIBE wp_comments
+		     6 Query	DESCRIBE wp_links
+		     6 Query	DESCRIBE wp_options
+		     6 Query	DESCRIBE wp_postmeta
+		     6 Query	DESCRIBE wp_terms
+		     6 Query	DESCRIBE wp_term_taxonomy
+		     6 Query	DESCRIBE wp_term_relationships
+		     6 Query	DESCRIBE wp_termmeta
+		     6 Query	DESCRIBE wp_commentmeta
+		     6 Query	SELECT option_value FROM wp_options WHERE option_name = 'ftp_credentials' LIMIT 1
+		     6 Query	SELECT option_value FROM wp_options WHERE option_name = 'nonce_key' LIMIT 1
+		     6 Query	SELECT option_value FROM wp_options WHERE option_name = 'nonce_key' LIMIT 1
+		     6 Query	SELECT option_value FROM wp_options WHERE option_name = 'nonce_key' LIMIT 1
+		     6 Query	INSERT INTO `wp_options` (`option_name`, `option_value`, `autoload`) VALUES ('nonce_key', 'F@(UBMCml;t^ON^-D*v%)}yMobw)QDXxw>L.u.ddKx!U)T@M5r&O/uhTo:4qA>`I', 'no') ON DUPLICATE KEY UPDATE `option_name` = VALUES(`option_name`), `option_value` = VALUES(`option_value`), `autoload` = VALUES(`autoload`)
+		     6 Query	SELECT option_value FROM wp_options WHERE option_name = 'nonce_salt' LIMIT 1
+		     6 Query	SELECT option_value FROM wp_options WHERE option_name = 'nonce_salt' LIMIT 1
+		     6 Query	SELECT option_value FROM wp_options WHERE option_name = 'nonce_salt' LIMIT 1
+		     6 Query	INSERT INTO `wp_options` (`option_name`, `option_value`, `autoload`) VALUES ('nonce_salt', 'p)_&(t%gsgwofuA;EFsKWp&?~hyBWnP-w_IDMN=hvs@e@-!k7@^#$t*sC*/_pBJ1', 'no') ON DUPLICATE KEY UPDATE `option_name` = VALUES(`option_name`), `option_value` = VALUES(`option_value`), `autoload` = VALUES(`autoload`)
+		     6 Query	SELECT option_value FROM wp_options WHERE option_name = 'html_type' LIMIT 1
+		     6 Query	SELECT option_value FROM wp_options WHERE option_name = 'html_type' LIMIT 1
+		     6 Query	SHOW TABLES LIKE 'wp\\_users'
+		     6 Query	SELECT option_value FROM wp_options WHERE option_name = 'siteurl' LIMIT 1
+		     6 Query	SELECT option_value FROM wp_options WHERE option_name = 'siteurl' LIMIT 1
+		     6 Query	SELECT option_value FROM wp_options WHERE option_name = 'permalink_structure' LIMIT 1
+		     6 Query	SELECT option_value FROM wp_options WHERE option_name = 'home' LIMIT 1
+		     6 Query	SELECT option_value FROM wp_options WHERE option_name = 'home' LIMIT 1
+		     6 Query	SELECT option_value FROM wp_options WHERE option_name = 'siteurl' LIMIT 1
+		     6 Query	SELECT option_value FROM wp_options WHERE option_name = 'siteurl' LIMIT 1
+		     6 Query	SELECT option_value FROM wp_options WHERE option_name = 'siteurl' LIMIT 1
+		     6 Query	SELECT option_value FROM wp_options WHERE option_name = 'siteurl' LIMIT 1
+		     6 Query	SELECT option_value FROM wp_options WHERE option_name = 'siteurl' LIMIT 1
+		     6 Query	SELECT option_value FROM wp_options WHERE option_name = 'siteurl' LIMIT 1
+		     6 Query	SELECT option_value FROM wp_options WHERE option_name = 'siteurl' LIMIT 1
+		     6 Query	SELECT option_value FROM wp_options WHERE option_name = 'start_of_week' LIMIT 1
+		     6 Query	SELECT option_value FROM wp_options WHERE option_name = 'time_format' LIMIT 1
+		     6 Query	SELECT option_value FROM wp_options WHERE option_name = 'date_format' LIMIT 1
+		     6 Query	SELECT option_value FROM wp_options WHERE option_name = 'siteurl' LIMIT 1
+		     6 Query	SELECT option_value FROM wp_options WHERE option_name = 'siteurl' LIMIT 1
+		     6 Query	SELECT option_value FROM wp_options WHERE option_name = 'siteurl' LIMIT 1
+		     6 Query	SELECT option_value FROM wp_options WHERE option_name = 'permalink_structure' LIMIT 1
+		     6 Query	SELECT option_value FROM wp_options WHERE option_name = 'home' LIMIT 1
+		     6 Query	SELECT option_value FROM wp_options WHERE option_name = 'home' LIMIT 1
+		     6 Query	SELECT option_value FROM wp_options WHERE option_name = 'siteurl' LIMIT 1
+		     6 Query	SELECT option_value FROM wp_options WHERE option_name = 'timezone_string' LIMIT 1
+		     6 Query	SELECT option_value FROM wp_options WHERE option_name = 'timezone_string' LIMIT 1
+		     6 Query	SELECT option_value FROM wp_options WHERE option_name = 'gmt_offset' LIMIT 1
+		     6 Query	SELECT option_value FROM wp_options WHERE option_name = 'start_of_week' LIMIT 1
+		     6 Query	SELECT option_value FROM wp_options WHERE option_name = 'time_format' LIMIT 1
+		     6 Query	SELECT option_value FROM wp_options WHERE option_name = 'date_format' LIMIT 1
+		     6 Query	SELECT option_value FROM wp_options WHERE option_name = 'siteurl' LIMIT 1
+		     6 Query	SELECT option_value FROM wp_options WHERE option_name = 'siteurl' LIMIT 1
+		     6 Quit	
+240612  7:54:24	     7 Connect	root@wordp.inception_mynet on  using TCP/IP
+		     7 Query	SET NAMES utf8mb4
+		     7 Query	SET NAMES 'utf8mb4' COLLATE 'utf8mb4_unicode_520_ci'
+		     7 Query	SELECT @@SESSION.sql_mode
+		     7 Query	SET SESSION sql_mode='ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION'
+		     7 Init DB	mysql
+		     7 Query	SELECT option_value FROM wp_options WHERE option_name = 'siteurl'
+		     7 Query	DESCRIBE wp_users
+		     7 Query	DESCRIBE wp_usermeta
+		     7 Query	DESCRIBE wp_posts
+		     7 Query	DESCRIBE wp_comments
+		     7 Query	DESCRIBE wp_links
+		     7 Query	DESCRIBE wp_options
+		     7 Query	DESCRIBE wp_postmeta
+		     7 Query	DESCRIBE wp_terms
+		     7 Query	DESCRIBE wp_term_taxonomy
+		     7 Query	DESCRIBE wp_term_relationships
+		     7 Query	DESCRIBE wp_termmeta
+		     7 Query	DESCRIBE wp_commentmeta
+		     7 Query	SELECT option_value FROM wp_options WHERE option_name = 'siteurl' LIMIT 1
+		     7 Query	SELECT option_value FROM wp_options WHERE option_name = 'siteurl' LIMIT 1
+		     7 Query	SELECT option_value FROM wp_options WHERE option_name = 'home' LIMIT 1
+		     7 Query	SELECT option_value FROM wp_options WHERE option_name = 'siteurl' LIMIT 1
+		     7 Query	SELECT option_value FROM wp_options WHERE option_name = 'siteurl' LIMIT 1
+		     7 Query	SELECT option_value FROM wp_options WHERE option_name = 'wp_attachment_pages_enabled' LIMIT 1
+		     7 Query	SELECT option_value FROM wp_options WHERE option_name = 'cron' LIMIT 1
+		     7 Query	SELECT option_value FROM wp_options WHERE option_name = 'active_plugins' LIMIT 1
+		     7 Query	SELECT option_value FROM wp_options WHERE option_name = 'hack_file' LIMIT 1
+		     7 Query	SELECT option_value FROM wp_options WHERE option_name = 'permalink_structure' LIMIT 1
+		     7 Query	SELECT option_value FROM wp_options WHERE option_name = 'wp_user_roles' LIMIT 1
+		     7 Query	SELECT option_value FROM wp_options WHERE option_name = 'stylesheet' LIMIT 1
+		     7 Query	SELECT option_value FROM wp_options WHERE option_name = 'template' LIMIT 1
+		     7 Query	SELECT option_value FROM wp_options WHERE option_name = 'stylesheet' LIMIT 1
+		     7 Query	SELECT option_value FROM wp_options WHERE option_name = 'stylesheet' LIMIT 1
+		     7 Query	SELECT option_value FROM wp_options WHERE option_name = 'template' LIMIT 1
+		     7 Query	SELECT option_value FROM wp_options WHERE option_name = 'WPLANG' LIMIT 1
+		     7 Query	SELECT option_value FROM wp_options WHERE option_name = 'stylesheet' LIMIT 1
+		     7 Query	SELECT option_value FROM wp_options WHERE option_name = 'stylesheet' LIMIT 1
+		     7 Query	SELECT option_value FROM wp_options WHERE option_name = 'stylesheet' LIMIT 1
+		     7 Query	SELECT option_value FROM wp_options WHERE option_name = 'stylesheet' LIMIT 1
+		     7 Query	SELECT option_value FROM wp_options WHERE option_name = 'template' LIMIT 1
+		     7 Query	SELECT option_value FROM wp_options WHERE option_name = 'stylesheet' LIMIT 1
+		     7 Query	SELECT option_value FROM wp_options WHERE option_name = 'cron' LIMIT 1
+		     7 Query	SELECT option_value FROM wp_options WHERE option_name = 'wp_attachment_pages_enabled' LIMIT 1
+		     7 Query	SELECT option_value FROM wp_options WHERE option_name = 'category_base' LIMIT 1
+		     7 Query	SELECT option_value FROM wp_options WHERE option_name = 'category_base' LIMIT 1
+		     7 Query	SELECT option_value FROM wp_options WHERE option_name = 'tag_base' LIMIT 1
+		     7 Query	SELECT option_value FROM wp_options WHERE option_name = 'tag_base' LIMIT 1
+		     7 Query	SELECT option_value FROM wp_options WHERE option_name = 'permalink_structure' LIMIT 1
+		     7 Query	SELECT option_value FROM wp_options WHERE option_name = 'permalink_structure' LIMIT 1
+		     7 Query	SELECT option_value FROM wp_options WHERE option_name = 'permalink_structure' LIMIT 1
+		     7 Query	SELECT option_value FROM wp_options WHERE option_name = 'permalink_structure' LIMIT 1
+		     7 Query	SELECT option_value FROM wp_options WHERE option_name = 'permalink_structure' LIMIT 1
+		     7 Query	SELECT option_value FROM wp_options WHERE option_name = 'permalink_structure' LIMIT 1
+		     7 Query	SELECT option_value FROM wp_options WHERE option_name = 'siteurl'
+		     7 Query	DESCRIBE wp_users
+		     7 Query	DESCRIBE wp_usermeta
+		     7 Query	DESCRIBE wp_posts
+		     7 Query	DESCRIBE wp_comments
+		     7 Query	DESCRIBE wp_links
+		     7 Query	DESCRIBE wp_options
+		     7 Query	DESCRIBE wp_postmeta
+		     7 Query	DESCRIBE wp_terms
+		     7 Query	DESCRIBE wp_term_taxonomy
+		     7 Query	DESCRIBE wp_term_relationships
+		     7 Query	DESCRIBE wp_termmeta
+		     7 Query	DESCRIBE wp_commentmeta
+		     7 Query	SELECT option_value FROM wp_options WHERE option_name = 'use_smilies' LIMIT 1
+		     7 Query	SELECT option_value FROM wp_options WHERE option_name = 'home' LIMIT 1
+		     7 Query	SELECT option_value FROM wp_options WHERE option_name = 'home' LIMIT 1
+		     7 Query	SELECT option_value FROM wp_options WHERE option_name = 'home' LIMIT 1
+		     7 Query	SELECT option_value FROM wp_options WHERE option_name = 'home' LIMIT 1
+		     7 Query	SELECT option_value FROM wp_options WHERE option_name = 'blog_public' LIMIT 1
+		     7 Query	SELECT option_value FROM wp_options WHERE option_name = 'blog_charset' LIMIT 1
+		     7 Query	SELECT option_value FROM wp_options WHERE option_name = 'cron' LIMIT 1
+		     7 Query	SELECT option_value FROM wp_options WHERE option_name = 'cron' LIMIT 1
+		     7 Query	SELECT option_value FROM wp_options WHERE option_name = 'cron' LIMIT 1
+		     7 Query	SELECT option_value FROM wp_options WHERE option_name = 'siteurl' LIMIT 1
+		     7 Query	SELECT option_value FROM wp_options WHERE option_name = 'stylesheet' LIMIT 1
+		     7 Query	SELECT option_value FROM wp_options WHERE option_name = 'theme_switched' LIMIT 1
+		     7 Query	SELECT option_value FROM wp_options WHERE option_name = 'cron' LIMIT 1
+		     7 Query	SELECT option_value FROM wp_options WHERE option_name = 'siteurl'
+		     7 Query	DESCRIBE wp_users
+		     7 Query	DESCRIBE wp_usermeta
+		     7 Query	DESCRIBE wp_posts
+		     7 Query	DESCRIBE wp_comments
+		     7 Query	DESCRIBE wp_links
+		     7 Query	DESCRIBE wp_options
+		     7 Query	DESCRIBE wp_postmeta
+		     7 Query	DESCRIBE wp_terms
+		     7 Query	DESCRIBE wp_term_taxonomy
+		     7 Query	DESCRIBE wp_term_relationships
+		     7 Query	DESCRIBE wp_termmeta
+		     7 Query	DESCRIBE wp_commentmeta
+		     7 Query	SELECT option_value FROM wp_options WHERE option_name = 'ftp_credentials' LIMIT 1
+		     7 Query	SELECT option_value FROM wp_options WHERE option_name = 'nonce_key' LIMIT 1
+		     7 Query	SELECT option_value FROM wp_options WHERE option_name = 'nonce_key' LIMIT 1
+		     7 Query	SELECT option_value FROM wp_options WHERE option_name = 'nonce_key' LIMIT 1
+		     7 Query	INSERT INTO `wp_options` (`option_name`, `option_value`, `autoload`) VALUES ('nonce_key', ':CA:gsb5xzyY1QtCSae-6w==&Y#;c^0uWcijO8q;AiSt=luIGEwP{#p>DDGpa+7d', 'no') ON DUPLICATE KEY UPDATE `option_name` = VALUES(`option_name`), `option_value` = VALUES(`option_value`), `autoload` = VALUES(`autoload`)
+		     7 Query	SELECT option_value FROM wp_options WHERE option_name = 'nonce_salt' LIMIT 1
+		     7 Query	SELECT option_value FROM wp_options WHERE option_name = 'nonce_salt' LIMIT 1
+		     7 Query	SELECT option_value FROM wp_options WHERE option_name = 'nonce_salt' LIMIT 1
+		     7 Query	INSERT INTO `wp_options` (`option_name`, `option_value`, `autoload`) VALUES ('nonce_salt', 'rm}lQb>+|.+z>p`J|~$/aX>[H%M{e< zu4N7|dYh|eLfMsRO!JlFZt@]q,m!L|VK', 'no') ON DUPLICATE KEY UPDATE `option_name` = VALUES(`option_name`), `option_value` = VALUES(`option_value`), `autoload` = VALUES(`autoload`)
+		     7 Query	SELECT option_value FROM wp_options WHERE option_name = 'html_type' LIMIT 1
+		     7 Query	SELECT option_value FROM wp_options WHERE option_name = 'html_type' LIMIT 1
+		     7 Query	SHOW TABLES LIKE 'wp\\_users'
+		     7 Query	SELECT option_value FROM wp_options WHERE option_name = 'siteurl' LIMIT 1
+		     7 Query	SELECT option_value FROM wp_options WHERE option_name = 'siteurl' LIMIT 1
+		     7 Query	SELECT option_value FROM wp_options WHERE option_name = 'permalink_structure' LIMIT 1
+		     7 Query	SELECT option_value FROM wp_options WHERE option_name = 'home' LIMIT 1
+		     7 Query	SELECT option_value FROM wp_options WHERE option_name = 'home' LIMIT 1
+		     7 Query	SELECT option_value FROM wp_options WHERE option_name = 'siteurl' LIMIT 1
+		     7 Query	SELECT option_value FROM wp_options WHERE option_name = 'siteurl' LIMIT 1
+		     7 Query	SELECT option_value FROM wp_options WHERE option_name = 'siteurl' LIMIT 1
+		     7 Query	SELECT option_value FROM wp_options WHERE option_name = 'siteurl' LIMIT 1
+		     7 Query	SELECT option_value FROM wp_options WHERE option_name = 'siteurl' LIMIT 1
+		     7 Query	SELECT option_value FROM wp_options WHERE option_name = 'siteurl' LIMIT 1
+		     7 Query	SELECT option_value FROM wp_options WHERE option_name = 'siteurl' LIMIT 1
+		     7 Query	SELECT option_value FROM wp_options WHERE option_name = 'start_of_week' LIMIT 1
+		     7 Query	SELECT option_value FROM wp_options WHERE option_name = 'time_format' LIMIT 1
+		     7 Query	SELECT option_value FROM wp_options WHERE option_name = 'date_format' LIMIT 1
+		     7 Query	SELECT option_value FROM wp_options WHERE option_name = 'siteurl' LIMIT 1
+		     7 Query	SELECT option_value FROM wp_options WHERE option_name = 'siteurl' LIMIT 1
+		     7 Query	SELECT option_value FROM wp_options WHERE option_name = 'siteurl' LIMIT 1
+		     7 Query	SELECT option_value FROM wp_options WHERE option_name = 'permalink_structure' LIMIT 1
+		     7 Query	SELECT option_value FROM wp_options WHERE option_name = 'home' LIMIT 1
+		     7 Query	SELECT option_value FROM wp_options WHERE option_name = 'home' LIMIT 1
+		     7 Query	SELECT option_value FROM wp_options WHERE option_name = 'siteurl' LIMIT 1
+		     7 Query	SELECT option_value FROM wp_options WHERE option_name = 'timezone_string' LIMIT 1
+		     7 Query	SELECT option_value FROM wp_options WHERE option_name = 'timezone_string' LIMIT 1
+		     7 Query	SELECT option_value FROM wp_options WHERE option_name = 'gmt_offset' LIMIT 1
+		     7 Query	SELECT option_value FROM wp_options WHERE option_name = 'start_of_week' LIMIT 1
+		     7 Query	SELECT option_value FROM wp_options WHERE option_name = 'time_format' LIMIT 1
+		     7 Query	SELECT option_value FROM wp_options WHERE option_name = 'date_format' LIMIT 1
+		     7 Query	SELECT option_value FROM wp_options WHERE option_name = 'siteurl' LIMIT 1
+		     7 Query	SELECT option_value FROM wp_options WHERE option_name = 'siteurl' LIMIT 1
+		     7 Quit	
+240612  7:59:46	     8 Connect	root@wordp.inception_mynet on  using TCP/IP
+		     8 Query	SET NAMES utf8mb4
+		     8 Query	SET NAMES 'utf8mb4' COLLATE 'utf8mb4_unicode_520_ci'
+		     8 Query	SELECT @@SESSION.sql_mode
+		     8 Query	SET SESSION sql_mode='ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION'
+		     8 Init DB	mysql
+		     8 Query	SELECT option_value FROM wp_options WHERE option_name = 'siteurl'
+		     8 Query	DESCRIBE wp_users
+		     8 Query	DESCRIBE wp_usermeta
+		     8 Query	DESCRIBE wp_posts
+		     8 Query	DESCRIBE wp_comments
+		     8 Query	DESCRIBE wp_links
+		     8 Query	DESCRIBE wp_options
+		     8 Query	DESCRIBE wp_postmeta
+		     8 Query	DESCRIBE wp_terms
+		     8 Query	DESCRIBE wp_term_taxonomy
+		     8 Query	DESCRIBE wp_term_relationships
+		     8 Query	DESCRIBE wp_termmeta
+		     8 Query	DESCRIBE wp_commentmeta
+		     8 Query	SELECT option_value FROM wp_options WHERE option_name = 'siteurl' LIMIT 1
+		     8 Query	SELECT option_value FROM wp_options WHERE option_name = 'siteurl' LIMIT 1
+		     8 Query	SELECT option_value FROM wp_options WHERE option_name = 'home' LIMIT 1
+		     8 Query	SELECT option_value FROM wp_options WHERE option_name = 'siteurl' LIMIT 1
+		     8 Query	SELECT option_value FROM wp_options WHERE option_name = 'siteurl' LIMIT 1
+		     8 Query	SELECT option_value FROM wp_options WHERE option_name = 'wp_attachment_pages_enabled' LIMIT 1
+		     8 Query	SELECT option_value FROM wp_options WHERE option_name = 'cron' LIMIT 1
+		     8 Query	SELECT option_value FROM wp_options WHERE option_name = 'active_plugins' LIMIT 1
+		     8 Query	SELECT option_value FROM wp_options WHERE option_name = 'hack_file' LIMIT 1
+		     8 Query	SELECT option_value FROM wp_options WHERE option_name = 'permalink_structure' LIMIT 1
+		     8 Query	SELECT option_value FROM wp_options WHERE option_name = 'wp_user_roles' LIMIT 1
+		     8 Query	SELECT option_value FROM wp_options WHERE option_name = 'stylesheet' LIMIT 1
+		     8 Query	SELECT option_value FROM wp_options WHERE option_name = 'template' LIMIT 1
+		     8 Query	SELECT option_value FROM wp_options WHERE option_name = 'stylesheet' LIMIT 1
+		     8 Query	SELECT option_value FROM wp_options WHERE option_name = 'stylesheet' LIMIT 1
+		     8 Query	SELECT option_value FROM wp_options WHERE option_name = 'template' LIMIT 1
+		     8 Query	SELECT option_value FROM wp_options WHERE option_name = 'WPLANG' LIMIT 1
+		     8 Query	SELECT option_value FROM wp_options WHERE option_name = 'stylesheet' LIMIT 1
+		     8 Query	SELECT option_value FROM wp_options WHERE option_name = 'stylesheet' LIMIT 1
+		     8 Query	SELECT option_value FROM wp_options WHERE option_name = 'stylesheet' LIMIT 1
+		     8 Query	SELECT option_value FROM wp_options WHERE option_name = 'stylesheet' LIMIT 1
+		     8 Query	SELECT option_value FROM wp_options WHERE option_name = 'template' LIMIT 1
+		     8 Query	SELECT option_value FROM wp_options WHERE option_name = 'stylesheet' LIMIT 1
+		     8 Query	SELECT option_value FROM wp_options WHERE option_name = 'cron' LIMIT 1
+		     8 Query	SELECT option_value FROM wp_options WHERE option_name = 'wp_attachment_pages_enabled' LIMIT 1
+		     8 Query	SELECT option_value FROM wp_options WHERE option_name = 'category_base' LIMIT 1
+		     8 Query	SELECT option_value FROM wp_options WHERE option_name = 'category_base' LIMIT 1
+		     8 Query	SELECT option_value FROM wp_options WHERE option_name = 'tag_base' LIMIT 1
+		     8 Query	SELECT option_value FROM wp_options WHERE option_name = 'tag_base' LIMIT 1
+		     8 Query	SELECT option_value FROM wp_options WHERE option_name = 'permalink_structure' LIMIT 1
+		     8 Query	SELECT option_value FROM wp_options WHERE option_name = 'permalink_structure' LIMIT 1
+		     8 Query	SELECT option_value FROM wp_options WHERE option_name = 'permalink_structure' LIMIT 1
+		     8 Query	SELECT option_value FROM wp_options WHERE option_name = 'permalink_structure' LIMIT 1
+		     8 Query	SELECT option_value FROM wp_options WHERE option_name = 'permalink_structure' LIMIT 1
+		     8 Query	SELECT option_value FROM wp_options WHERE option_name = 'permalink_structure' LIMIT 1
+		     8 Query	SELECT option_value FROM wp_options WHERE option_name = 'siteurl'
+		     8 Query	DESCRIBE wp_users
+		     8 Query	DESCRIBE wp_usermeta
+		     8 Query	DESCRIBE wp_posts
+		     8 Query	DESCRIBE wp_comments
+		     8 Query	DESCRIBE wp_links
+		     8 Query	DESCRIBE wp_options
+		     8 Query	DESCRIBE wp_postmeta
+		     8 Query	DESCRIBE wp_terms
+		     8 Query	DESCRIBE wp_term_taxonomy
+		     8 Query	DESCRIBE wp_term_relationships
+		     8 Query	DESCRIBE wp_termmeta
+		     8 Query	DESCRIBE wp_commentmeta
+		     8 Query	SELECT option_value FROM wp_options WHERE option_name = 'use_smilies' LIMIT 1
+		     8 Query	SELECT option_value FROM wp_options WHERE option_name = 'home' LIMIT 1
+		     8 Query	SELECT option_value FROM wp_options WHERE option_name = 'home' LIMIT 1
+		     8 Query	SELECT option_value FROM wp_options WHERE option_name = 'home' LIMIT 1
+		     8 Query	SELECT option_value FROM wp_options WHERE option_name = 'home' LIMIT 1
+		     8 Query	SELECT option_value FROM wp_options WHERE option_name = 'blog_public' LIMIT 1
+		     8 Query	SELECT option_value FROM wp_options WHERE option_name = 'blog_charset' LIMIT 1
+		     8 Query	SELECT option_value FROM wp_options WHERE option_name = 'cron' LIMIT 1
+		     8 Query	SELECT option_value FROM wp_options WHERE option_name = 'cron' LIMIT 1
+		     8 Query	SELECT option_value FROM wp_options WHERE option_name = 'cron' LIMIT 1
+		     8 Query	SELECT option_value FROM wp_options WHERE option_name = 'siteurl' LIMIT 1
+		     8 Query	SELECT option_value FROM wp_options WHERE option_name = 'stylesheet' LIMIT 1
+		     8 Query	SELECT option_value FROM wp_options WHERE option_name = 'theme_switched' LIMIT 1
+		     8 Query	SELECT option_value FROM wp_options WHERE option_name = 'cron' LIMIT 1
+		     8 Query	SELECT option_value FROM wp_options WHERE option_name = 'siteurl'
+		     8 Query	DESCRIBE wp_users
+		     8 Query	DESCRIBE wp_usermeta
+		     8 Query	DESCRIBE wp_posts
+		     8 Query	DESCRIBE wp_comments
+		     8 Query	DESCRIBE wp_links
+		     8 Query	DESCRIBE wp_options
+		     8 Query	DESCRIBE wp_postmeta
+		     8 Query	DESCRIBE wp_terms
+		     8 Query	DESCRIBE wp_term_taxonomy
+		     8 Query	DESCRIBE wp_term_relationships
+		     8 Query	DESCRIBE wp_termmeta
+		     8 Query	DESCRIBE wp_commentmeta
+		     8 Query	SELECT option_value FROM wp_options WHERE option_name = 'ftp_credentials' LIMIT 1
+		     8 Query	SELECT option_value FROM wp_options WHERE option_name = 'nonce_key' LIMIT 1
+		     8 Query	SELECT option_value FROM wp_options WHERE option_name = 'nonce_key' LIMIT 1
+		     8 Query	SELECT option_value FROM wp_options WHERE option_name = 'nonce_key' LIMIT 1
+		     8 Query	INSERT INTO `wp_options` (`option_name`, `option_value`, `autoload`) VALUES ('nonce_key', '^8P8woODEHMK>z@1{h-3j1V1#;_9 `#tZO4u{wYs5&bj5jvQ!/lF#s0S.[sv(lyv', 'no') ON DUPLICATE KEY UPDATE `option_name` = VALUES(`option_name`), `option_value` = VALUES(`option_value`), `autoload` = VALUES(`autoload`)
+		     8 Query	SELECT option_value FROM wp_options WHERE option_name = 'nonce_salt' LIMIT 1
+		     8 Query	SELECT option_value FROM wp_options WHERE option_name = 'nonce_salt' LIMIT 1
+		     8 Query	SELECT option_value FROM wp_options WHERE option_name = 'nonce_salt' LIMIT 1
+		     8 Query	INSERT INTO `wp_options` (`option_name`, `option_value`, `autoload`) VALUES ('nonce_salt', 'kl_XKH4Zw7p2@,U0*:0Io2|J=;SzqM -{43u<g2+I=rYeuSSMlBP4vI<]pVas;Hf', 'no') ON DUPLICATE KEY UPDATE `option_name` = VALUES(`option_name`), `option_value` = VALUES(`option_value`), `autoload` = VALUES(`autoload`)
+		     8 Query	SELECT option_value FROM wp_options WHERE option_name = 'html_type' LIMIT 1
+		     8 Query	SELECT option_value FROM wp_options WHERE option_name = 'html_type' LIMIT 1
+		     8 Query	SHOW TABLES LIKE 'wp\\_users'
+		     8 Query	SELECT option_value FROM wp_options WHERE option_name = 'siteurl' LIMIT 1
+		     8 Query	SELECT option_value FROM wp_options WHERE option_name = 'siteurl' LIMIT 1
+		     8 Query	SELECT option_value FROM wp_options WHERE option_name = 'permalink_structure' LIMIT 1
+		     8 Query	SELECT option_value FROM wp_options WHERE option_name = 'home' LIMIT 1
+		     8 Query	SELECT option_value FROM wp_options WHERE option_name = 'home' LIMIT 1
+		     8 Query	SELECT option_value FROM wp_options WHERE option_name = 'siteurl' LIMIT 1
+		     8 Query	SELECT option_value FROM wp_options WHERE option_name = 'siteurl' LIMIT 1
+		     8 Query	SELECT option_value FROM wp_options WHERE option_name = 'siteurl' LIMIT 1
+		     8 Query	SELECT option_value FROM wp_options WHERE option_name = 'siteurl' LIMIT 1
+		     8 Query	SELECT option_value FROM wp_options WHERE option_name = 'siteurl' LIMIT 1
+		     8 Query	SELECT option_value FROM wp_options WHERE option_name = 'siteurl' LIMIT 1
+		     8 Query	SELECT option_value FROM wp_options WHERE option_name = 'siteurl' LIMIT 1
+		     8 Query	SELECT option_value FROM wp_options WHERE option_name = 'start_of_week' LIMIT 1
+		     8 Query	SELECT option_value FROM wp_options WHERE option_name = 'time_format' LIMIT 1
+		     8 Query	SELECT option_value FROM wp_options WHERE option_name = 'date_format' LIMIT 1
+		     8 Query	SELECT option_value FROM wp_options WHERE option_name = 'siteurl' LIMIT 1
+		     8 Query	SELECT option_value FROM wp_options WHERE option_name = 'siteurl' LIMIT 1
+		     8 Query	SELECT option_value FROM wp_options WHERE option_name = 'siteurl' LIMIT 1
+		     8 Query	SELECT option_value FROM wp_options WHERE option_name = 'permalink_structure' LIMIT 1
+		     8 Query	SELECT option_value FROM wp_options WHERE option_name = 'home' LIMIT 1
+		     8 Query	SELECT option_value FROM wp_options WHERE option_name = 'home' LIMIT 1
+		     8 Query	SELECT option_value FROM wp_options WHERE option_name = 'siteurl' LIMIT 1
+		     8 Query	SELECT option_value FROM wp_options WHERE option_name = 'timezone_string' LIMIT 1
+		     8 Query	SELECT option_value FROM wp_options WHERE option_name = 'timezone_string' LIMIT 1
+		     8 Query	SELECT option_value FROM wp_options WHERE option_name = 'gmt_offset' LIMIT 1
+		     8 Query	SELECT option_value FROM wp_options WHERE option_name = 'start_of_week' LIMIT 1
+		     8 Query	SELECT option_value FROM wp_options WHERE option_name = 'time_format' LIMIT 1
+		     8 Query	SELECT option_value FROM wp_options WHERE option_name = 'date_format' LIMIT 1
+		     8 Query	SELECT option_value FROM wp_options WHERE option_name = 'siteurl' LIMIT 1
+		     8 Query	SELECT option_value FROM wp_options WHERE option_name = 'siteurl' LIMIT 1
+		     8 Quit	

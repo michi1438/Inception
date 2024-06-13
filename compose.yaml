@@ -6,7 +6,7 @@
 #    By: mguerga <mguerga@42lausanne.ch>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/03/12 11:15:41 by mguerga           #+#    #+#              #
-#    Updated: 2024/06/11 13:18:48 by mguerga          ###   ########.fr        #
+#    Updated: 2024/06/13 13:24:12 by mguerga          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -18,25 +18,42 @@ services:
     networks: ["mynet"]
     build: nginx/
     volumes:
-      - WordPress:/etc/data
+      - type: bind
+        target: /etc/data
+        source: /home/mguerga/data/WP
+        bind:
+          propagation: shared
+          create_host_path: true
     ports:
       - "4430:443"
+    restart: on-failure
   wordpress:
-    container_name: wordp
+    container_name: wordpress
     networks: ["mynet"]
     depends_on:
       - mariadb 
     build: wordpress/ 
     volumes:
-      - WordPress:/etc/data
+      - type: bind
+        target: /etc/data
+        source: /home/mguerga/data/WP
+        bind:
+          propagation: shared
+          create_host_path: true
     ports:
       - "9000:9000"
+    restart: on-failure
   mariadb:
     container_name: mariadb 
     networks: ["mynet"]
     build: mariadb/
     volumes:
-      - DB:/var/lib/mysql
+      - type: bind
+        target: /var/lib/mysql 
+        source: /home/mguerga/data/DB
+        bind:
+          propagation: shared
+          create_host_path: true
     environment:
       MARIADB_USER: wordp 
       MARIADB_DATABASE: 'db1' 
@@ -44,16 +61,11 @@ services:
       MARIADB_ROOT_PASSWORD: toor
     ports:
       - "3306:3306"
+    restart: on-failure
 
 volumes:
   DB:
-    # driver: db 
-    #driver_opts:
-    #  size: "1GiB"
-  WordPress:
-    # driver: wp 
-    #driver_opts:
-    #  size: "1GiB"
+  WP:
 
 networks:
   mynet:
