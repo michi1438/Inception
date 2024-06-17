@@ -1,2 +1,1 @@
-php-fpm83 && \
-tail -f
+php-fpm83 -F
