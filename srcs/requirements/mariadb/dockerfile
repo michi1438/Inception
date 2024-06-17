@@ -1,9 +1,9 @@
-FROM alpine:latest
+FROM alpine
 
 WORKDIR /
 
-COPY maria.sh . 
-COPY my.cnf . 
+COPY tools/maria.sh maria.sh 
+COPY conf/my.cnf my.cnf 
 
 VOLUME ["/home/mguerga/data/"]
 

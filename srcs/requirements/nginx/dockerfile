@@ -1,0 +1,19 @@
+FROM alpine
+
+WORKDIR /code
+COPY tools/50x.html 50x.html 
+COPY tools/cert.pem cert.pem 
+COPY tools/cert.key cert.key 
+COPY conf/nginx.conf nginx.conf 
+COPY conf/fastcgi_params fastcgi_params 
+COPY conf/mime.types mime.types 
+
+
+RUN apk update && \
+	apk add --no-cache nginx && \
+	ln -sf /dev/stdout /var/log/nginx/error.log
+
+EXPOSE 443 
+
+CMD ["nginx", "-c", "/code/nginx.conf", "-g", "daemon off;"]
+
