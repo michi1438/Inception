@@ -6,60 +6,59 @@
 #    By: mguerga <mguerga@42lausanne.ch>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/03/12 11:15:41 by mguerga           #+#    #+#              #
-#    Updated: 2024/06/17 11:36:13 by mguerga          ###   ########.fr        #
+#    Updated: 2024/06/19 11:38:03 by mguerga          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 services:
   nginx:
     container_name: nginx 
+    volumes:
+      - WP:/etc/data
     depends_on:
       - wordpress
     networks: ["mynet"]
     build: requirements/nginx/
-    volumes:
-      - type: bind
-        target: /etc/data
-        source: /home/mguerga/data/WP
-        bind:
-          propagation: shared
-          create_host_path: true
     env_file: ".env"
     ports:
       - "443:443"
     restart: on-failure
   wordpress:
     container_name: wordpress
+    volumes:
+      - WP:/etc/data
     networks: ["mynet"]
     depends_on:
       - mariadb 
     build: requirements/wordpress/ 
-    volumes:
-      - type: bind
-        target: /etc/data
-        source: /home/mguerga/data/WP
-        bind:
-          propagation: shared
-          create_host_path: true
     env_file: ".env"
     restart: on-failure
   mariadb:
     container_name: mariadb 
+    volumes:
+      - DB:/var/lib/mysql
     networks: ["mynet"]
     build: requirements/mariadb/
-    volumes:
-      - type: bind
-        target: /var/lib/mysql 
-        source: /home/mguerga/data/DB
-        bind:
-          propagation: shared
-          create_host_path: true
     env_file: ".env"
     restart: on-failure
 
 volumes:
   DB:
+    driver: local
+    driver_opts:
+      type: none
+      o: bind
+      device: /home/mguerga/data/DB
   WP:
+    driver: local
+    driver_opts:
+      type: none
+      o: bind
+      device: /home/mguerga/data/WP
 
 networks:
   mynet:
+    ipam:
+      driver: default
+      config:
+        - subnet: 172.28.0.0/16

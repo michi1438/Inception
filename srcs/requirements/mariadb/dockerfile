@@ -3,6 +3,7 @@ FROM alpine
 WORKDIR /
 
 COPY tools/maria.sh maria.sh 
+COPY tools/maria2.sh maria2.sh 
 COPY conf/my.cnf my.cnf 
 
 VOLUME ["/home/mguerga/data/"]

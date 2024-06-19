@@ -6,13 +6,15 @@
 #    By: mguerga <mguerga@42lausanne.ch>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/03/12 11:12:32 by mguerga           #+#    #+#              #
-#    Updated: 2024/06/17 12:16:50 by mguerga          ###   ########.fr        #
+#    Updated: 2024/06/18 14:22:00 by mguerga          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 # docker compose Makefile
 
 all: build up
+
+re: down all
 
 build:
 	@docker-compose -f srcs/compose.yaml build

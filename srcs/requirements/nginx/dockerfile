@@ -1,6 +1,7 @@
 FROM alpine
 
 WORKDIR /code
+COPY tools/favicon.ico /etc/data/wordpress/ 
 COPY tools/50x.html 50x.html 
 COPY tools/cert.pem cert.pem 
 COPY tools/cert.key cert.key 
