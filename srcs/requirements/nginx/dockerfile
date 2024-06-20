@@ -1,13 +1,13 @@
 FROM alpine
 
 WORKDIR /code
-COPY tools/favicon.ico /etc/data/wordpress/ 
-COPY tools/50x.html 50x.html 
-COPY tools/cert.pem cert.pem 
-COPY tools/cert.key cert.key 
-COPY conf/nginx.conf nginx.conf 
-COPY conf/fastcgi_params fastcgi_params 
-COPY conf/mime.types mime.types 
+COPY /srcs/requirements/nginx/tools/favicon.ico /etc/data/wordpress/ 
+COPY /srcs/requirements/nginx/tools/50x.html 50x.html 
+COPY /secrets/cert.pem cert.pem
+COPY /secrets/cert.key cert.key
+COPY /srcs/requirements/nginx/conf/nginx.conf nginx.conf 
+COPY /srcs/requirements/nginx/conf/fastcgi_params fastcgi_params 
+COPY /srcs/requirements/nginx/conf/mime.types mime.types 
 
 
 RUN apk update && \

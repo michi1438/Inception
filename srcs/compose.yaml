@@ -6,7 +6,7 @@
 #    By: mguerga <mguerga@42lausanne.ch>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/03/12 11:15:41 by mguerga           #+#    #+#              #
-#    Updated: 2024/06/19 11:38:03 by mguerga          ###   ########.fr        #
+#    Updated: 2024/06/20 15:06:41 by mguerga          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -18,7 +18,9 @@ services:
     depends_on:
       - wordpress
     networks: ["mynet"]
-    build: requirements/nginx/
+    build:
+      context: ../ 
+      dockerfile: srcs/requirements/nginx/dockerfile
     env_file: ".env"
     ports:
       - "443:443"

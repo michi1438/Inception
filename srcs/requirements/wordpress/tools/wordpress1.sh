@@ -7,4 +7,3 @@ chmod +x /etc/data/wp-cli.phar
 mv wp-config.php wordpress/
 mv wp-cli.phar /usr/local/bin/wp
 cp /usr/bin/php83 /usr/bin/php
-
