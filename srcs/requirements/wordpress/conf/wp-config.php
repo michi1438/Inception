@@ -24,13 +24,8 @@
 // (it gets parsed by the upstream wizard in https://github.com/WordPress/WordPress/blob/f27cb65e1ef25d11b535695a660e7282b98eb742/wp-admin/setup-config.php#L356-L392)
 
  // ** Database settings - You can get this info from your web host ** //                                                                                            
- /** The name of the database for WordPress */                                                                                                                       
  define( 'DB_NAME', getenv('WORDPRESS_DB_NAME') );                                                                                                      
-                                                                                                                                                                     
- /** Database username */                                                                                                                                            
  define( 'DB_USER', getenv('WORDPRESS_DB_USER') );                                                                                                
-                                                                                                                                                                     
- /** Database password */                                                                                                                                            
  define( 'DB_PASSWORD', getenv('WORDPRESS_DB_PASSWORD') );                                                                                            
 /**
  * Docker image fallback values above are sourced from the official WordPress installation wizard:
