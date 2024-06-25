@@ -1,0 +1,20 @@
+FROM alpine
+
+WORKDIR /
+
+COPY conf/vsftpd.conf .
+COPY conf/vsftpd.userlist .
+COPY tools/ftp.sh .
+
+RUN apk update && \
+	apk add --no-cache vsftpd && \
+	touch /var/log/vsftpd.log && \
+	adduser -D -G nogroup ftpuser && \
+	mkdir -p /var/run/vsftpd/empty && \
+	chown ftpuser: /vsftpd.userlist && \
+	chown ftpuser: /var/log/vsftpd.log
+
+EXPOSE 21
+
+CMD ["sh", "/ftp.sh"]
+

@@ -6,11 +6,22 @@
 #    By: mguerga <mguerga@42lausanne.ch>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/03/12 11:15:41 by mguerga           #+#    #+#              #
-#    Updated: 2024/06/20 15:06:41 by mguerga          ###   ########.fr        #
+#    Updated: 2024/06/25 13:27:12 by mguerga          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 services:
+  ftp:
+    env_file: ".env"
+    container_name: ftp 
+    volumes:
+      - WP:/etc/data
+    depends_on:
+      - nginx 
+    networks: ["mynet"]
+    build: requirements/bonus/ftp
+    restart: on-failure
+
   nginx:
     container_name: nginx 
     volumes:
@@ -25,6 +36,7 @@ services:
     ports:
       - "443:443"
     restart: on-failure
+
   wordpress:
     container_name: wordpress
     volumes:
@@ -35,6 +47,7 @@ services:
     build: requirements/wordpress/ 
     env_file: ".env"
     restart: on-failure
+
   mariadb:
     container_name: mariadb 
     volumes:
