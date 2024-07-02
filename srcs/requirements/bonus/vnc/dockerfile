@@ -1,0 +1,22 @@
+FROM debian:stable
+
+
+WORKDIR /
+
+RUN mkdir /.vnc/
+
+COPY tools/xstartup /.vnc/xstartup
+COPY tools/novnc.sh /novnc.sh
+
+RUN	apt-get update && \
+	apt-get install -y i3 --no-install-recommends && \
+	apt-get install -y xterm dmenu vim tigervnc-standalone-server novnc websockify nginx && \
+	apt-get clean autoclean && \
+	apt-get autoremove --yes && \
+	rm -rf /var/lib/apt/lists/*
+
+RUN chmod 744 .vnc/xstartup
+
+EXPOSE 6080 
+
+CMD ["sh", "novnc.sh"]

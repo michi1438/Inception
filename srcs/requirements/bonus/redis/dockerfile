@@ -1,0 +1,14 @@
+FROM alpine:3.20.1
+
+WORKDIR /
+
+COPY conf/redis.conf .
+
+RUN apk update && \
+	apk add --no-cache redis && \
+	addgroup redis nogroup
+
+EXPOSE 6379
+
+CMD ["redis-server", "/redis.conf"]
+

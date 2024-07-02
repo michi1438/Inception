@@ -1,4 +1,4 @@
-FROM alpine
+FROM alpine:3.20.1
 
 WORKDIR /code
 COPY /srcs/requirements/nginx/tools/favicon.ico /etc/data/wordpress/ 

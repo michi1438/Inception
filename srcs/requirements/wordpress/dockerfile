@@ -1,4 +1,4 @@
-FROM alpine
+FROM alpine:3.20.1
 
 WORKDIR /etc/data
 
@@ -7,7 +7,7 @@ COPY tools/wordpress2.sh /wordpress2.sh
 COPY conf/wp-config.php wp-config.php 
 
 RUN apk update && \
-	apk --no-cache add php83 php83-phar php83-mbstring php83-fpm php83-mysqli
+	apk --no-cache add php83 php83-phar php83-mbstring php83-fpm php83-mysqli php83-session
 
 COPY conf/www.conf /etc/php83/php-fpm.d/www.conf
 
@@ -17,6 +17,6 @@ RUN	adduser -S nginx && \
 
 RUN	sh wordpress1.sh
 
-CMD ["php-fpm83", "-F"]
+CMD ["sh", "/wordpress2.sh"]
 
 EXPOSE 9000

@@ -6,11 +6,44 @@
 #    By: mguerga <mguerga@42lausanne.ch>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/03/12 11:15:41 by mguerga           #+#    #+#              #
-#    Updated: 2024/06/25 13:27:12 by mguerga          ###   ########.fr        #
+#    Updated: 2024/07/02 10:38:32 by mguerga          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 services:
+  vnc:
+    env_file: ".env"
+    container_name: vnc 
+    volumes:
+      - WP:/etc/data
+    depends_on:
+      - ftp 
+    networks: ["mynet"]
+    build: requirements/bonus/vnc
+    restart: on-failure
+
+  adminer:
+    env_file: ".env"
+    container_name: adminer 
+    volumes:
+      - WP:/etc/data
+    depends_on:
+      - nginx 
+    networks: ["mynet"]
+    build: requirements/bonus/adminer
+    restart: on-failure
+
+  redis:
+    env_file: ".env"
+    container_name: redis 
+    volumes:
+      - WP:/etc/data
+    depends_on:
+      - nginx 
+    networks: ["mynet"]
+    build: requirements/bonus/redis
+    restart: on-failure
+
   ftp:
     env_file: ".env"
     container_name: ftp 
