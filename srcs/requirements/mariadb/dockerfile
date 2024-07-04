@@ -3,9 +3,8 @@ FROM alpine:3.20.1
 WORKDIR /
 
 COPY tools/maria.sh maria.sh 
+COPY tools/maria2.sh maria2.sh 
 COPY conf/my.cnf my.cnf 
-
-VOLUME ["/home/mguerga/data/"]
 
 RUN apk update && \
 	apk add --no-cache mariadb mariadb-client && \

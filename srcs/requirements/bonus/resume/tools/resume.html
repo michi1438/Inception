@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Michael GUERGA - Resume</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+			font-size: 16px;
+            line-height: 1.1;
+            margin: 0;
+            padding: 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+            position: relative;
+        }
+        h1 {
+            color: #333;
+        }
+        h2 {
+            color: #666;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 5px;
+        }
+        ul {
+            line-height: 1.3;
+        }
+		.objective {
+            line-height: 1.3;
+			font-size: 18px;
+            font-style: italic;
+            color: #555;
+            margin-bottom: 40px;
+            margin-top: 40px;
+            text-align: center;
+        }
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        .skill {
+            background-color: #f0f0f0;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 0.9em;
+        }
+		.header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .profile-picture {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 20px;
+        }
+        .name-and-contact {
+            flex-grow: 1;
+			text-align: right;
+        }
+        .contact-info {
+            margin-bottom: 20px;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        .experience-item {
+            margin-bottom: 15px;
+        }
+        .interests {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .interest-category {
+            flex: 1 1 50%;
+            min-width: 200px;
+        }
+		.vertical-text-container {
+			position: fixed;
+			right: 0;
+			top: 50%;
+			transform: translateY(-50%) rotate(180deg);
+			background-color: rgba(255, 255, 255, 0.9);
+			transition: all 0.7s ease;
+			z-index: 1000;
+			display: flex;
+			flex-direction: row-reverse;
+		}
+
+		.vertical-text-toggle {
+			writing-mode: vertical-rl;
+			text-orientation: mixed;
+			padding: 30px;
+			cursor: pointer;
+			font-size: 25px;
+			color: #999;
+		}
+
+		.vertical-text-content {
+			writing-mode: vertical-rl;
+			text-orientation: mixed;
+			max-height: 0;
+			overflow: hidden;
+			transition: max-height 0.7s ease;
+			white-space: nowrap;
+			font-size: 15px;
+			color: #999;
+            text-align: center;
+		}
+
+		.vertical-text-container.expanded .vertical-text-content {
+			max-height: 80vh; /* Adjust this value as needed */
+			padding: 5px 1px;
+		}
+	</style>
+</head>
+<body>
+	<div class="header">
+        <img src="path_to_your_image.jpg" alt="Michael GUERGA" class="profile-picture">
+        <div class="name-and-contact">
+            <h1>Michael GUERGA</h1>
+            <div class="contact-info">
+                <p>2500 route d'Onnion, 74490, St Jeoire, FRANCE</p>
+                <p>+33 767123314 | michaelguerga@gmail.com</p>
+                <p>Date of birth: July 10, 1995</p>
+                <p>Nationality: American and French, Bilingual, Bicultural</p>
+            </div>
+        </div>
+    </div>
+	<div class="objective">
+        Innovative professional with a unique blend of wine industry expertise and emerging IT skills. Seeking to leverage my diverse background in a dynamic tech role that combines creativity, problem-solving, and continuous learning.
+    </div>
+	<div class="section">
+        <h2>Skills</h2>
+        <div class="skills">
+            <span class="skill">Python</span>
+            <span class="skill">C</span>
+            <span class="skill">C++</span>
+            <span class="skill">Docker/DockerCompose</span>
+            <span class="skill">Shell Scripting</span>
+            <span class="skill">Linux (Arch)</span>
+            <span class="skill">Git</span>
+            <span class="skill">Data Analysis</span>
+            <span class="skill">Wine Industry Knowledge</span>
+            <span class="skill">Customer Service</span>
+            <span class="skill">Project Management</span>
+            <span class="skill">Bilingual (English/French)</span>
+        </div>
+    </div>
+    <div class="section">
+        <h2>Current Status</h2>
+        <p>Search of company experience from September, 2024</p>
+        <p>Working part-time in a Nicolas - Suisse wine retailer as a caviste</p>
+        <p>Passed the piscine of Ecole 42 - Lausanne during June 2022, I am now finishing 42 and aiming to validate a first experience in IT</p>
+        <p>Working on personal projects: beer brewing, shell scripting, DeepLearning.AI, and a interactive world-wide wine map</p>
+    </div>
+    <div class="section">
+        <h2>Work Experience</h2>
+        <div class="experience-item">
+            <h3>2016 - 2021</h3>
+            <p>Multiple wineshops/bars experiences in Paris, San Francisco, Provence, and Haute-Savoie</p>
+            <p>Responsible for a shop called WineNot-Morzine: stocks, orders, organizing tastings, opening and closing of the shop</p>
+        </div>
+        <div class="experience-item">
+            <h3>2015 - 2016</h3>
+            <p>UFA Clorivière, Paris. Apprenticeship BTS technico-commercial vin et spiritueux</p>
+            <p>WineSpiritEducationTrust 2nd Level with "distinction"</p>
+            <p>Apprenticeship, Champagne BRUNO PAILLARD, Sales of wines in the Greater Paris area</p>
+        </div>
+    </div>
+    <div class="section">
+        <h2>Education</h2>
+        <p>2015 - 2016: UFA Clorivière, Paris - BTS technico-commercial vin et spiritueux</p>
+        <p>2011 - 2014: BAC Pro Vignes et Vins, Lycée agricole d'Hyères AGRICAMPUS, Var</p>
+    </div>
+	<div class="section">
+        <h2>Projects</h2>
+        <ul>
+            <li>Interactive World-Wide Wine Map: Developing a dynamic web application using Python and JavaScript to visualize global wine data.</li>
+            <li>Homebrew Automation: Created a shell script to monitor and control homebrew fermentation temperatures using Raspberry Pi.</li>
+            <li>42 School Projects: Completed various programming challenges and projects as part of the 42 curriculum, focusing on C and system programming.</li>
+        </ul>
+    </div>
+    <div class="section">
+        <h2>Interests</h2>
+        <div class="interests">
+            <div class="interest-category">
+                <h3>Food</h3>
+                <p>Œnology and viticultural artisanal/small scale innovation, wine making, and tastings, food and drink culture</p>
+            </div>
+            <div class="interest-category">
+                <h3>Geeky</h3>
+                <p>Shellscripting, math (complex numbers, calculus, logic), physics, vim, dynamic wine map, python, codewars, C, Linux(archlinux)</p>
+            </div>
+            <div class="interest-category">
+                <h3>Music</h3>
+                <p>Violin in conservatoire, acoustic guitar, piano, predilection for 50s to 80s music</p>
+            </div>
+            <div class="interest-category">
+                <h3>Sports</h3>
+                <p>Skiing, surf, climbing, hikes and ready to try almost anything</p>
+            </div>
+        </div>
+    </div>
+	<div class="vertical-text-container">
+		<div class="vertical-text-toggle">&#9776;</div>
+		<div class="vertical-text-content">
+			<p>Made with extensive help from Claude 3.5 Sonnet.</p>
+			<p>"In the era of AI, knowing that solutions exist is often more valuable than knowing how to implement them yourself."</p>
+			<p>- Andrew Ng, AI researcher and co-founder of Coursera</p>
+		</div>
+	</div>
+    <script>
+		document.addEventListener('DOMContentLoaded', function() {
+			const printButton = document.createElement('button');
+			printButton.textContent = 'Print Resume';
+			printButton.addEventListener('click', function() {
+				window.print();
+			});
+			document.body.insertBefore(printButton, document.body.firstChild);
+
+			// Add this new code for the expandable vertical text
+			const verticalTextContainer = document.querySelector('.vertical-text-container');
+			const verticalTextToggle = document.querySelector('.vertical-text-toggle');
+
+			verticalTextToggle.addEventListener('click', function() {
+				verticalTextContainer.classList.toggle('expanded');
+			});
+        });
+    </script>
+</body>
+</html>

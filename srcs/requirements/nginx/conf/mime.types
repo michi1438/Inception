@@ -1,4 +1,6 @@
 types {
+text/html					html htm;
+text/css					css;
 application/A2L					a2l;
 application/AML					aml;
 application/andrew-inset			ez;
@@ -889,12 +891,10 @@ multipart/voice-message				vpm;
 text/cache-manifest				appcache manifest;
 text/calendar					ics ifb;
 text/cql                    CQL;
-text/css					css;
 text/csv					csv;
 text/csv-schema					csvs;
 text/dns					soa zone;
 text/gff3                   gff3;
-text/html					html htm;
 text/javascript                 js mjs;
 text/jcr-cnd					cnd;
 text/markdown					markdown md;

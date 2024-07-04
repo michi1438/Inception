@@ -2,20 +2,20 @@ FROM alpine:3.20.1
 
 WORKDIR /etc/data
 
-COPY tools/wordpress1.sh wordpress1.sh 
+COPY tools/wordpress1.sh /etc/data/wordpress1.sh 
 COPY tools/wordpress2.sh /wordpress2.sh 
 COPY conf/wp-config.php wp-config.php 
 
 RUN apk update && \
-	apk --no-cache add php83 php83-phar php83-mbstring php83-fpm php83-mysqli php83-session
+	apk --no-cache add php83 php83-phar php83-mbstring php83-fpm php83-mysqli php83-session php83-redis
 
 COPY conf/www.conf /etc/php83/php-fpm.d/www.conf
 
 RUN	adduser -S nginx && \
 	addgroup -S nginx && \
-	ln -sf /dev/stdout /var/log/php83/error.log
+	ln -sf /dev/stdout /var/log/php83/error.log && \
+	sh /etc/data/wordpress1.sh
 
-RUN	sh wordpress1.sh
 
 CMD ["sh", "/wordpress2.sh"]
 

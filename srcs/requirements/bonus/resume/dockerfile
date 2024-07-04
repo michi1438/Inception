@@ -1,0 +1,8 @@
+FROM alpine:3.20.1
+
+WORKDIR /
+
+COPY tools/resume.html . 
+
+CMD ["mv", "resume.html", "/etc/data/resume.html"]
+

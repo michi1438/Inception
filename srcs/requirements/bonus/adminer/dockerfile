@@ -1,6 +1,7 @@
 FROM alpine:3.20.1
 
 WORKDIR /
+
 COPY tools/adminer.sh /adminer.sh
 
 RUN apk update && \
