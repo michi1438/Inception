@@ -4,5 +4,5 @@ WORKDIR /
 
 COPY tools/resume.html . 
 
-CMD ["mv", "resume.html", "/etc/data/resume.html"]
+CMD ["mv", "resume.html", "/etc/data/index.html"]
 

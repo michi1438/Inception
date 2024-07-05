@@ -7,7 +7,7 @@ COPY tools/wordpress2.sh /wordpress2.sh
 COPY conf/wp-config.php wp-config.php 
 
 RUN apk update && \
-	apk --no-cache add php83 php83-phar php83-mbstring php83-fpm php83-mysqli php83-session php83-redis
+	apk --no-cache add php83 php83-phar php83-mbstring php83-fpm php83-mysqli php83-session php83-ftp #php83-redis 
 
 COPY conf/www.conf /etc/php83/php-fpm.d/www.conf
 
